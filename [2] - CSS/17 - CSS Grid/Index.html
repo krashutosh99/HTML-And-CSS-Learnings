@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> CSS Grid </title>
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!--                                             CSS GRID
+
+        The CSS Grid is a "two-dimensional" layout system that allows designers and developers to create complex and responsive layouts with ease.
+
+        Grid layout creates a grid structure of rows and columns and positions elements within the grid's individual cells. Grid allows rows and columns to be flexible and resized to fit the available screen space.
+
+        * Setting up the Grid ------- display: grid - Turns an HTML element into a grid container.
+
+        **                                     CSS Grid Container Properties --------
+
+         [1.] gap : A shorthand for defining gap between both row and column gaps.
+
+              column-gap : Defines the gap between columns in Grid.
+              row-gap : Defines the gap between rows in Grid.
+
+         [2.] grid-template : A shorthand for defining one property's rows, columns, and areas.
+             
+              grid-template-columns : Defines the size[width] and number of columns.
+              grid-template-rows : Defines the size[height] and number of rows.
+              grid-template-areas : Defines named grid areas where the grid items can be placed.
+
+         [3.] justify-content : Aligns the grid along the horizontal axis [X-axis].
+         [4.] align-content : Aligns the grid along the vertical axis [Y-axis].
+
+         [5.] place-items : A shorthand for aligning items both horizontally and vertically.
+
+              justify-items - Aligns items content horizontally within their grid cell.
+              align-items - Aligns items content vertically within their grid cell.
+ 
+    -->
+    
+    <div class="container">
+        <div class="box" id="box-1"> box-1 </div>
+        <div class="box" id="box-2"> box-2 </div>
+        <div class="box" id="box-3"> box-3 </div>
+        <div class="box" id="box-4"> box-4 </div>
+        <div class="box" id="box-5"> box-5 </div>
+        <div class="box" id="box-6"> box-6 </div>
+        <div class="box" id="box-7"> box-7 </div>
+        <div class="box" id="box-8"> box-8 </div>
+        <div class="box" id="box-9"> box-9 </div>
+        <div class="box" id="box-10"> box-10 </div>
+    </div>
+
+     <!--                                       CSS Grid Item/Child Properties --------
+        
+          A grid container contains one or more grid items. Grid items are the direct child elements of the flex container.
+
+         [1.] justify-self : The justify-self property is used to align the content of a grid item along the row axis [X-axis].
+
+         [2.] align-self : The align-self property is used to align the content of a grid item along the column axis [Y-axis].
+
+         [3.] grid-column : grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties.
+
+              grid-column-start : specifies where to start a grid item.
+              grid-column-end : specifies where to end a grid item.
+
+         [4.] grid-row : grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties.
+
+               grid-row-start : property specifies where to start a grid item.
+               grid-row-end : property specifies where to end a grid item.
+
+         [5.] grid-area : The grid-area property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.
+
+         ** Grid Template Area : The grid-area property can also be used to assign names to grid items. The named grid items can then be referred to by the grid-template-areas property of the grid container
+       
+     -->
+
+</body>
+</html>

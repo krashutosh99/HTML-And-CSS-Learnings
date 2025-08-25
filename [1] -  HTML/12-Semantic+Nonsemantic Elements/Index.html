@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=\, initial-scale=1.0" />
+ <title>HTML - Semantic + Non-Semantic Elements</title>
+</head>
+<body>
+
+    <!--                                HTML Semantic Elements
+
+        A semantic element clearly describes its meaning to both the browser and the developer.
+
+        Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+        Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content.
+ 
+        In HTML there are several semantic elements that can be used to define different parts of a web page:  
+
+        [1.] <article>    -- Defines independent, self-contained content
+        [2.] <aside>      -- Defines content aside from the page content
+        [3.] <details>    -- Defines additional details that the user can view or hide
+        [4.] <figure>     -- Specifies self-contained content, like illustrations, diagrams, photos, code listings.
+        [5.] <figcaption> -- Defines a caption for a <figure> element
+        [6.] <header>     -- Specifies a header for a document or section
+        [7.] <footer>     -- Defines a footer for a document or section
+        [8.] <main>       -- Specifies the main content of a document
+        [9.] <mark>       -- Defines marked/highlighted text
+        [10.] <nav>       -- Defines navigation links
+        [11.] <section>   -- Defines a section in a document
+        [12.] <summary>   -- Defines a visible heading for a <details> element
+        [13.] <time>      -- Defines a date/time
+        [14.] <form>      -- Defines a form 
+        [15.] <table>     -- Defines a table
+
+
+                                            HTML Non-Semantic elements
+
+         Unlike, semantic elements they don’t have any meaning. They don’t tell anything about the content they contain. They can be used with different attributes to mark up semantics common to a group.
+
+         Following is the list of some non-semantic elements:
+
+          [1.] div
+          [2.] span
+
+    -->
+
+       <!-- Header -->
+       <header>
+         <h1>My Website</h1>
+         <nav class="main-menu">
+           <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+           </ul>
+         </nav>
+       </header>
+
+      <main>
+
+       <!-- Sections -->
+       <section id="about">
+           <div class="card text-center">
+             <h2 class="text-lg">Section One</h2>
+             <p>This is the first paragraph in<span class="primary-text">section one</span></p>
+             <p>This is the second paragraph in<span class="secondary-text">section one</span></p>
+           </div>
+       </section>
+
+       <section id="contact">
+         <div class="card text-center">
+           <h2 class="text-xl">Section Two</h2>
+           <p class="lead"> This is the first paragraph in<span class="primary-text">section two</span></p>
+           <p>This is the second paragraph in<span class="secondary-text">section two</span></p>
+         </div>
+       </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer>&copy; 2024 My Website</footer>
+
+      
+</body>
+</html>

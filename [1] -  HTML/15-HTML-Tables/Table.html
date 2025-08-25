@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title> HTML Table </title>
+</head>
+<body>
+
+  <!--                                     HTML Tables
+
+       HTML tables allow web developers to arrange data into rows and columns. A table in HTML consists of table cells inside rows and columns.
+
+       [1.] Table Cells ---- Each table cell is defined by a <td></td> tag. td stands for table data.
+       Everything between <td> and </td> is the content of a table cell.
+  
+       [2.] Table Rows ---- Each table row starts with a <tr> and ends with a </tr> tag. tr stands for table row.
+
+       [3.] Table Headers ---- Sometimes we may want our cells to be like table header cells. In those cases use the <th> tag instead of the <td> tag. th stands for table header.
+
+       By default, the text in <th> elements are bold and centered, but you can change that with CSS.
+
+       [Tag] 	          [Description]
+       <table> 	        Defines a table
+       <th> 	          Defines a header cell in a table
+       <tr> 	          Defines a row in a table
+       <td> 	          Defines a cell in a table
+       <caption> 	      Defines a table caption
+       <colgroup> 	    Specifies a group of one or more columns in a table for formatting
+       <col> 	          Specifies column properties for each column within a <colgroup> element
+       <thead> 	        Groups the header content in a table
+       <tbody> 	        Groups the body content in a table
+       <tfoot> 	        Groups the footer content in a table
+
+       [4.] Table Border ------
+
+         To add a border, use the CSS border property on table, th, and td elements.
+         To avoid having double borders in a row/column of a table, set the CSS border-collapse property to collapse.This will make the borders collapse into a single border.
+
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+
+       [5.] Table Text-Color or Background Color ------
+            
+            To add a text-color or background color, use the CSS property on table, th, and td elements.
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              background-color: lightblue;
+            }
+ 
+       [6.] Round Table Borders + Border Color -------
+         
+            To add a round border radius and border color, use border-radius and border-color, CSS property on table, th, and td elements.
+
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              background-color: lightblue;
+              border-radius: 6px;
+              border-color: tomato;
+            }
+
+       [7.] Table Sizes -----
+
+           Use the style attribute with the "width" or "height" properties to specify the size of a table, row or column.
+
+           Example ----
+
+                  <style>
+                      table, th, td {
+                         border:1px solid black;
+                         border-collapse: collapse;
+                      }
+                  </style>
+
+                  <h2> 90% wide HTML Table </h2>
+
+                  <table style="width:90%">
+                     <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th> 
+                        <th>Age</th>
+                     </tr>
+
+                     <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                     </tr>
+
+                     <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                     </tr>
+
+                     <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                     </tr>
+
+                  </table>
+
+       [8.] Table Padding & Spacing -----
+         
+             Table - Cell Padding -- Cell padding is the space between the cell edges and the cell content.
+             By default the padding is set to 0.
+
+             To add padding on table cells, use the CSS padding property:
+             Example ----
+                th, td {
+                   padding: 15px;
+                } 
+
+             Table - Cell Spacing -- Cell spacing is the space between each cell. By default the space is set to 2 pixels.
+
+             To change the space between table cells, use the CSS border-spacing property on the table element:
+             Example ----
+               table {
+                 border-spacing: 30px;
+               } 
+
+       [9.] Table Colspan & Rowspan --
+
+              Table - Colspan ----
+                To make a cell span over multiple columns, use the colspan attribute.
+                Note: The value of the colspan attribute represents the number of columns to span.
+
+              Table - Rowspan
+                To make a cell span over multiple rows, use the rowspan attribute.
+                Note: The value of the rowspan attribute represents the number of rows to span.
+
+  -->
+
+      <h1> HTML - Table </h1>
+      <!--Example 1-->
+      <style>
+        table {
+         font-family: arial, sans-serif;
+         /* border-collapse: collapse; */
+         width: 100%;
+
+        }
+    
+        table, th,td {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+       }
+    
+       tr:nth-child(even) {
+        background-color: #dddddd;
+       }
+      </style>
+
+      <table>
+
+        <colgroup>
+          <col style="background-color: aqua" />
+          <col style="background-color: darkcyan" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> E-mail </th>
+            <th colspan="2"> Telephone Number </th>
+          </tr>
+        </thead>
+
+        <tbody>
+         <tr>
+           <td> John </td>
+           <td> Doe </td>
+           <td> john@gmail.com </td>
+           <td> 555-555-5555 </td>
+           <td> 111-111-1111 </td>
+         </tr>
+         
+         <tr>
+           <td> Sam </td>
+           <td> Decosta </td>
+           <td> samdta@gmail.com </td>
+           <td> 999-999-9999 </td>
+           <td> 111-111-1111 </td>
+         </tr>
+
+      </table>
+
+
+</body>
+</html>

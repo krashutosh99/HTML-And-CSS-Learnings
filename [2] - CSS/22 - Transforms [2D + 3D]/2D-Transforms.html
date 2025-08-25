@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> CSS 2D Transforms </title>
+ <link rel="stylesheet" href="2D-Transforms.css">
+</head>
+<body>
+
+  <!--                                          [   CSS 2D-Transforms   ]
+         
+    The transform property applies a 2D or 3D transformation to an element. This property allows us to rotate, scale, move, skew etc elements.
+
+    Four transformation properties are ---
+
+      [1.] translate()
+      [2.] rotate()
+      [3.] scale() [ scaleX(), scaleY() ]
+      [4.] skew() or Tilt [ skewX(), skewY() ]
+      [5.] matrix()
+    
+            
+      [1.] translate() Function ----
+
+        The translate() function moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+
+        i.e; translate(X-axis, Y-axis);
+
+
+      [2.] rotate() Function ----
+                  
+        The rotate() function rotates an element "clockwise" or "counter-clockwise" according to a given degree.
+
+        i.e; rotate(Xdeg);
+
+      [3.] scale() Function ----
+                 
+        The scale() function "increases" or "decreases" the size of an element (according to the parameters given for the width and height).
+
+        i.e; scale(width, height);
+
+        [a.] scaleX() ---- The scaleX() function increases or decreases the width of an element.
+
+          The following example increases the <div> element to be two times of its original width: 
+            Example ----
+              div {
+                transform: scaleX(2);
+              } 
+
+        [b.] scaleY() ---- The scaleY() function increases or decreases the height of an element.
+
+          The following example increases the <div> element to be three times of its original height: 
+            Example ----
+              div {
+                transform: scaleY(3);
+              } 
+
+      [4.] skew() Function ---- The skew() function skews[i.e; tilt] an element along the X and Y-axis by the given angles. The following example skews the <div> element 20 degrees along the X-axis, and 10 degrees along the Y-axis:
+          Example ----
+            div {
+              transform: skew(20deg, 10deg);
+            } 
+
+          [a.] skewX() ---- skews an element along the X-axis by the given angle. Following example skews the <div> element 20 degrees along the X-axis:
+            Example :
+              div {
+                transform: skewX(20deg);
+              } 
+
+          [b.] skewY() ---- skews an element along the Y-axis by the given angle. Following example skews the <div> element 20 degrees along the Y-axis:
+            Example :
+              div {
+                transform: skewY(20deg);
+              } 
+                                      
+      [5.] matrix() method ---- matrix() function combines all the 2D transform functions into one.
+
+       The matrix() function take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+        The parameters are as follow : ---- 
+         matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+
+  -->
+
+    <h1> 2D Transform Properties </h1>
+
+              <!-- Example 1 -> translate()  -->
+                <style> 
+                  .mydiv {
+                   width: 300px;
+                   height: 100px;
+                   background-color: hotpink;
+                   border: 1px solid black;
+                   transform: translate(50px,60px);
+                 }
+                </style>
+                <h2> [ 1. ] translate() Method </h2>
+                <div class="mydiv">
+                     This div element is moved 50 pixels to the right, and 60 pixels down from its current position.
+                </div>
+                <br><br><br><br>
+                <br>
+
+              <!-- Example 2 -> rotate() -->
+                <style>
+                    div {
+                      width: 300px;
+                      height: 100px;
+                      background-color: yellow;
+                      border: 1px solid black;
+                    }
+                    
+                    #myDiv {
+                      transform: rotate(10deg);
+                    }
+                    </style>
+
+                    <h2> [ 2. ] rotate() Method </h2>
+                    <h4> Example 1 ---- </h4>
+                    <div> This a normal div element. </div>
+                    <div id="myDiv"> This div element is rotated clockwise 10 degrees. </div>
+                    
+                    <h4> Example 2 ---- </h4>
+                    <p> The inner box on Hovering is getting rotated to 45 degrees clockwise .</p>
+                     <div class="container">
+                        <div class="box"> Box </div>
+                     </div>
+                     <br><br>
+
+                    
+              <!-- Example 3 -> Scale() -->
+                  <style>
+                    .div1 {
+                      margin-left: 100px;
+                      width: 200px;
+                      height: 100px;
+                      background-color:cornflowerblue;
+                      border: 1px solid black;
+                      transition: transform 3s ease-out;
+                    }
+                    .div1:hover {
+                    transform: scale(2,3);
+                    }
+                </style>
+                <h2> [ 3. ] scale() Method </h2>
+                <div class="div1">This div element on Hovering becomes two times of its original width, and three times of its original height bcoz of scale(). </div>
+                <br><br>
+
+                    <!-- scaleX() -->
+                     <style>
+                       .divv {
+                        margin-left: 120px;
+                        width: 200px;
+                        height: 100px;
+                        background-color:yellowgreen;
+                        border: 1px solid black;
+                        transition: transform 3s ease-out ;
+                      }
+                      .divv:hover {
+                        transform: scaleX(2);
+                      }
+                     </style>
+                     <h3> [ a. ] scaleX() Method </h3>
+                     <div class="divv"> This div element on hovering becomes two times of its original width bcoz of scaleX() function. </div>
+                     <br><br>
+
+                     <!-- scaleY() -->
+                     <style>
+                      .divvv {
+                        margin-left: 120px;
+                        width: 200px;
+                        height: 100px;
+                        background-color:thistle;
+                        border: 1px solid black;
+                        transition: transform 3s ease-out;
+                      }
+                      .divvv:hover {
+                      transform: scaleY(3);
+                      }
+                      </style>
+                      <h3> [ b. ] scaleY() Method </h3>
+                      <div class="divvv"> This div element on hovering becomes three times of its original height bcoz of scaleY(). </div>
+                      
+                        
+              <!-- Example 4 -> Skew() -->
+                <style>
+                  #div2 {
+                   width: 300px;
+                   height: 100px;
+                   background-color:tomato;
+                   border: 1px solid black;
+                   transition: transform 3s ease-out;
+                 }
+              
+                 #div2:hover {
+                   transform: skew(20deg,10deg);
+                 }
+               </style>
+              
+               <h2> [ 4. ] skew() Method</h2>
+               <div> This a normal div element. </div>
+               <div id="div2">
+                 This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+               </div>
+              
+              <!-- Example 5 -> Matrix() -->
+              <style>
+               .div3 {
+                 width: 300px;
+                 height: 100px;
+                 background-color: yellow;
+                 border: 1px solid black;
+                }
+
+               #myDiv1 {
+                 transform: matrix(1, -0.3, 0, 1, 0, 0);
+                }
+
+               #myDiv2 {
+                 transform: matrix(1, 0, 0.5, 1, 150, 0);
+                }
+              </style>
+
+              <h2> [5.] matrix() Method </h2>
+              <div class="div3"> This a normal div element.</div>
+              <div id="myDiv1"> Using the matrix() method. </div>
+              <div id="myDiv2"> Another use of the matrix() method. </div>
+
+
+</body>
+</html>

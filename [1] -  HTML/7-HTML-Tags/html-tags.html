@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> HTML Tags </title>
+</head>
+<body>
+  
+  <!--                                        HTML Tags     
+  
+    An HTML tag is a piece of markup language, used to indicate the beginning and end of an HTML element in an HTML document used to structure and format content on web pages. 
+    Tags are nothing but some instructions that are enclosed in angle braces(i.e., <>). They provide instructions to web browsers on how to render text, images, links, and other medias.
+
+    HTML tags are enclosed in angle brackets <> and usually come in pairs: "an opening tag <>" and a "closing tag </>". The opening tag marks the beginning of an element, while the closing tag marks the end.
+
+    There are 2 types of Tags in HTML:
+
+      [1.] Container tags
+      [2.] Empty Tags
+
+      [Container Tags] -- Container tags are generally divided into three parts, i.e., opening tag, content(which will display on the browser), and closing tag. In the content part, they can also contain some other tags. These opening and closing tags are used in pairs which are start tag and end tag, which are often called ON and OFF tags. 
+
+        [Syntax] --- tag_name> ... </tag_name> 
+
+          Examples of Container Tag --
+            [a.] Essential Tags -- <html></html>, <head></head>, <title></title>, <body></body>
+            [b.] Heading Tags -- <h1></h1> to <h6></h6>
+            [c.] Text formatters -- <b>, <strong>, <i> etc
+            [d.] Hyperlinks -- <a></a>
+            [e.] Button Tag -- <button></button>
+            [f.] Division Tag -- <div></div>
+            [g.] Iframe Tag -- <iframe></iframe>
+            [h.] Navigation Tag -- <nav></nav>
+            [i.] Script Tag -- <script></script> and many more tags.
+
+      [Empty Tags] -- The tags that do not contain any closing tags are known as empty tags. Empty tags contain only the opening tag but they perform some action in the webpage. 
+        [Syntax] --  <tag-name>
+
+          Examples of Empty Tags -- <br>, <hr>, <img>, <input>, <link>, <meta>, <source> & more.
+
+  -->
+
+    <h1> [1.] Container Tags In HTML </h1>
+
+      <p> This is a Paragraph Tag. </p>
+      <h2> This is a Heading Tag. </h2>
+      <b> This is a Text Bold Tag </b> <br>
+      <i> This is a Text Italic Tag </i> <br>
+      <u> This is a Text Underline Tag </u> <br>
+      <a href="#"> This is a Link Tag </a> <br>
+      <img src="#" alt="This is a Image Tag"/>
+      <div> This is a div Container Tag </div>
+      <nav> This is a Nav Tag </nav>
+      <header> This is a Header Tag </header>
+      <article> This is a Article Tag</article>
+      <section> This is a Section Tag </section>
+      <main> This is a Main Container Tag </main>
+      <aside>This is a Aside Content Tag</aside>
+      <footer>This is a Footer Tag </footer>
+
+    <h1> [2.] Empty Tags in HTML </h1>
+
+    <!-- Line Break (br) -->
+	    <p>This is a line of text.<br>Here is a new line because of break line tag.</p>
+      Hello <br/><br/><br/>
+      World
+
+	    <!-- Horizontal Line (hr) -->
+	    <hr>
+      <p>This is the first&nbsp;&nbsp;&nbsp; paragraph</p>
+      <hr/>
+      <p>This is the second paragraph</p>
+      <br/>
+      <p>Copyright &copy; 2024</p>
+
+	    <!-- Image (img) -->
+	    <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="An example image"/>
+
+      <!-- pre tag -->
+      <pre>
+        Hello          World
+
+        Hello
+            Again
+      </pre>
+
+	    <!-- Input (input) -->
+	    <label for="username"> Username: </label>
+	    <input type="text" id="username" name="username" placeholder="Enter your username"/>
+
+	    <!-- External Media Source (source) -->
+	    <audio controls>
+		   <source src="audio.mp3" type="audio/mp3"> Your browser does not support the audio tag. 
+      </audio>
+
+       <!-- code tag -->
+       <code> &lt;h1&gt;This is a heading&lt;/h1&gt; </code>
+
+    <!-- HTML Entities -->
+    <!-- 
+      - &gt; for >
+      - &lt; for <
+      - &amp; for &
+      - &quot; for "
+      - &apos; for '
+      - &nbsp; for Non-breaking space
+      - &copy; for ©
+      - &reg; for ®
+      - &trade; for ™
+      - &deg; for ° 
+
+    -->
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Flexbox Container properties </title>
+ <link rel="stylesheet" href="Style.css"/>
+</head>
+<body>
+  
+  <!--                                         CSS Flex Container Properties
+  
+    The flex container becomes flexible by setting the display property to flex and then container properties can be applied on the container.
+    
+    The CSS properties we use for the flex container are :
+
+      [1.] flex-direction
+      [2.] flex-wrap
+      [3.] flex-flow [flex-direction + flex-wrap]
+      [4.] justify-content
+      [5.] align-items
+      [6.] align-content
+
+  -->
+
+  <h1 class="heading"> Flexbox Container Properties </h1>
+
+  <!-- flex-direction -->
+  <h2> [ 1. ] flex direction : The flex-direction property specifies the display-direction of flex items in the flex container. </h2>
+  <img src="../assets/flex-direction-desc.png" alt="flex-direction" style="width: 550px;"/>
+  <p style="font-size: 1.3rem;"> 
+    The flex-direction property can have one of the following values : 
+    [a.] row  
+    [b.] column  
+    [c.] row - reverse 
+    [d.] column-reverse.
+  </p>
+  <h3> Examples : [a.] flex-direction : row; </h3>
+  <div class="container">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+  </div>
+  
+  <h3> [b.] flex-direction : row-reverse; </h3>
+  <div class="container2">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+  </div>
+
+  <h3> [c.] flex-direction : column; </h3>
+  <div class="container3">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+  </div>
+
+  <h3> [d.] flex-direction : column-reverse; </h3>
+  <div class="container4">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+  </div>
+
+  <!-- flex-wrap -->
+  <h2> [ 2. ] flex-wrap : The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line. </h2>
+  <img src="../assets/flexbox-flex-wrap.jpg" alt="flex-wrap" style="width: 900px; height: 400px;"/>
+  <p style="font-size: 1.3rem;"> 
+    The flex-wrap property can have one of the following values :
+    [a.] nowrap (default)
+    [b.] wrap
+    [c.] wrap-reverse
+  </p>
+  <h3> Examples : [a.] flex-wrap : nowrap; </h3>
+  <div class="container5">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+    <div id="box7" class="box"> Flex Item 7 </div>
+    <div id="box8" class="box"> Flex Item 8 </div>
+  </div>
+  
+  <h3> [b.] flex-wrap : wrap; </h3>
+  <div class="container6">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+    <div id="box7" class="box"> Flex Item 7 </div>
+    <div id="box8" class="box"> Flex Item 8 </div>
+  </div>
+
+  <!-- flex-flow -->
+  <h2> [ 3. ] flex-flow : The flex-flow property is a shorthand property for setting both the "flex-direction" and "flex-wrap" properties at once. </h2>
+  <h3> Example - flex-flow : row wrap; </h3>
+  <div class="flex-container">
+   <div> 1 </div>
+   <div> 2 </div>
+   <div> 3 </div>  
+   <div> 4 </div>
+   <div> 5 </div>
+   <div> 6 </div>  
+   <div> 7 </div>
+   <div> 8 </div>
+   <div> 9 </div>  
+   <div> 10 </div>
+   <div> 11 </div>
+   <div> 12 </div>  
+  </div>
+
+  <!-- justify-content -->
+  <h2> [ 4. ] justify-content : The justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally, X-Axis). </h2>
+  <img src="../assets/justify-content.png" alt="justify-content" style="height: 600px; width: 600px;"/>
+  <p style="font-size: 1.5rem;"> 
+    The justify - content property can have one of the following values :
+  </p>
+  <ol style="font-size: 1.5rem;">
+    <li> center </li>
+    <li> flex-start </li>
+    <li> flex-end </li>
+    <li> space-around </li>
+    <li> space-between </li>
+    <li> space-evenly </li>
+  </ol>
+
+  <h3> Examples : [a.] justify-content : center; </h3>
+  <div class="container7">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [b.] justify-content : flex-start; </h3>
+  <div class="container8">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [c.] justify-content : flex-end; </h3>
+  <div class="container9">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [d.] justify-content : space-between; </h3>
+  <div class="container10">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [e.] justify-content : space-around; </h3>
+  <div class="container11">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [f.] justify-content : space-evenly; </h3>
+  <div class="container12">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+  </div>
+
+  <!-- align-items -->
+  <h2> [ 5. ] align-items : The align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically, Y-Axis). </h2>
+  <img src="../assets/align-items+content.png" alt="align-items"/>
+  <p style="font-size: 1.5rem;"> 
+    The align-items property can have one of the following values:
+  </p>
+  <ol style="font-size: 1.5rem;">
+    <li> center </li>
+    <li> flex-start </li>
+    <li> flex-end </li>
+    <li> stretch </li>
+    <li> baseline </li>
+    <li> normal </li>
+  </ol>
+
+  <h3> Examples : [a.] align-items : center; </h3>
+  <div class="container13">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [b.] align-items : flex-start; </h3>
+  <div class="container14">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [c.] align-items : flex-end; </h3>
+  <div class="container15">
+    <div id="box1" class="box"> Flex Item 1 </div>
+    <div id="box2" class="box"> Flex Item 2 </div>
+    <div id="box3" class="box"> Flex Item 3 </div>
+    <div id="box4" class="box"> Flex Item 4 </div>
+    <div id="box5" class="box"> Flex Item 5 </div>
+    <div id="box6" class="box"> Flex Item 6 </div>
+  </div>
+
+  <h3> [d.] align-items : stretch; [ stretch value stretches the flex items to fill the container (this is equal to "normal" which is default) ] </h3>
+  <div class="flex-container2">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>  
+    <div> 4 </div>
+    <div> 5 </div>
+  </div>
+
+  <h3> [e.] align-items : baseline; [ aligns the flex items such as their baselines aligns ] </h3>
+  <div class="flex-container3">
+    <div> <h1>1</h1> </div>
+    <div> <h6>2</h6> </div>
+    <div> <h3>3</h3> </div>  
+    <div> <small>4</small> </div>  
+  </div>
+  
+  <!-- align-content -->
+  <h2> [ 6. ] align-content : The align-content property is used to align or to adjust the 
+   spacing between flex lines within a flex container, particularly when there is extra space along the cross-
+   axis.The align-content property is similar to align-items, but instead of aligning flex items, it aligns the flex lines. 
+  </h2>
+  <p style="font-size: 1.5rem;"> The align-content property can have one of the following values : </p>
+  <ol style="font-size: 1.5rem;">
+    <li> center </li>
+    <li> stretch </li>
+    <li> flex-start </li>
+    <li> flex-end </li>
+    <li> space-around </li>
+    <li> space-between </li>
+    <li> space-evenly </li>
+  </ol>
+
+  <h3> [a.] align-content: center; </h3>
+  <div class="flex-container4">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>  
+    <div> 4 </div>
+    <div> 5 </div>
+    <div> 6 </div>  
+    <div> 7 </div>
+    <div> 8 </div>
+    <div> 9  </div>  
+    <div> 10 </div>
+    <div> 11 </div>
+    <div> 12 </div>  
+  </div>
+
+  <h3> [b.] align-content : flex-start; </h3>
+  <div class="flex-container5">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>  
+    <div> 4 </div>
+    <div> 5 </div>
+    <div> 6 </div>  
+    <div> 7 </div>
+    <div> 8 </div>
+    <div> 9 </div>  
+    <div> 10 </div>
+    <div> 11 </div>
+    <div> 12 </div>  
+  </div>
+
+  <h3> [c.] align-content : flex-end; </h3>
+  <div class="flex-container6">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>  
+    <div> 4 </div>
+    <div> 5 </div>
+    <div> 6 </div>  
+    <div> 7 </div>
+    <div> 8 </div>
+    <div> 9 </div>  
+    <div> 10 </div>
+    <div> 11 </div>
+    <div> 12 </div>  
+  </div>
+ 
+  <!-- Perfect Centering [ Using justify-content & align-items ] -->
+  <h1 class="heading"> Perfect Centering </h1>
+  <p style="font-size: 2rem;"> To center all the flex items inside the container, set both the "justify-content" and "align-items" properties to center, and the flex item will be perfectly centered, i.e ; </p>
+  <h3>
+    justify-content : center ; <br/>
+    align-items : center ;
+  </h3>
+  <div class="flex-container7">
+    <div id="boxx1" class="boxx"> Flex Item 1 </div>
+    <div id="boxx2" class="boxx"> Flex Item 2 </div>
+    <div id="boxx3" class="boxx"> Flex Item 3 </div>
+    <div id="boxx4" class="boxx"> Flex Item 4 </div>
+  </div>
+
+
+</body>
+</html>

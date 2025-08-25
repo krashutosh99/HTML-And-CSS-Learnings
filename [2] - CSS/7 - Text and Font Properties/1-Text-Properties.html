@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title> CSS Text Properties </title>
+ <style>
+    #main-heading {
+      font-size: 50px;
+      text-align: center;
+      background-color: rosybrown;
+    }
+ </style>
+</head>
+<body>
+  
+
+  <!--                                      CSS Text Properties
+ 
+    Text properties are used to add text effects & styles for HTML elements. Following are the list of the CSS text properties available in the CSS : -----
+          
+      [1.] color
+      [2.] text-align
+      [3.] text-decoration
+        [a.] text-decoration-line
+        [b.] text-decoration-color
+        [c.] text-decoration-style
+        [d.] text-decoration-thickness
+        [e.] shorthand - text-decoration
+      [4.] text-transform
+      [5.] text-spacing
+        [a.] text-indent
+        [b.] letter-spacing
+        [c.] word-spacing
+        [d.] line-height
+        [e.] white-space
+      [6.] text-shadow
+
+    -->
+
+    <h1 id="main-heading"> 7 - TEXT PROPERTIES IN CSS </h1>
+    <style>
+      #Div1 {
+        border: 1px solid gray;
+        padding: 8px;
+      }
+
+      #Div1 h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #4caf50;
+      }
+
+      #Div1 p {
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 3px;
+      }
+
+      #Div1 a {
+        text-decoration: none;
+        color: #008cba;
+      }
+    </style>
+
+    <div id="Div1">
+      <h1> text formatting </h1>
+      <p>
+        This text is styled with some of the text formatting properties. The
+        heading uses the text-align, text-transform, and color properties. The
+        paragraph is indented, aligned, and the space between characters is
+        specified. The underline is removed from this colored
+        <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a>
+        link.
+      </p>
+    </div>
+
+    <!--
+
+      [1.] color : "color" property of text is used to set the color of the text. 
+
+        Example -----
+    -->
+    <style>
+      #heading1 {
+        font-size: 40px;
+        color: red;
+        background-color: rgb(232, 203, 87);
+        text-align: center;
+      }
+      #head1 {
+        color: green;
+      }
+
+      .para {
+        color: blue;
+      }
+
+      .div2 {
+        height: 200px;
+        width: 1100px;
+        background-color: salmon;
+        margin-left: 100px;
+      }
+      .div2 h1 {
+        color: blue;
+        text-align: center;
+      }
+      .div2 p {
+        font-size: 25px;
+        text-align: center;
+        color: blue;
+      }
+
+      #childDiv {
+        background-color: slateblue;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+
+    <h1 id="heading1"> [ 1. ] "color" property of Text </h1>
+    <h3 id="head1"> This is heading 1 and its text color has been set as green. </h3>
+    <p class="para">
+      This is an ordinary paragraph. Notice that this text is blue. The default
+      text color for a page is defined in the body selector generally.
+    </p>
+    <p class="para">Another paragraph having it's text colour as blue.</p>
+
+    <div class="div2">
+      <h1> This is another Heading inside this div </h1>
+      <p> This div has a salmon color as background color and blue as text color. </p>
+      <div id="childDiv">
+        This is a child div inside the parent div container which has slateblue
+        as background color and white as text color.
+      </div>
+    </div>
+
+    <!--
+
+      [2.] text-align : "text-align" property of text is used to set the horizontal alignment of a text.
+          
+        Available Key Values ----
+          [a.] start -- same as left if direction is left-to-right and right if direction is right-to-left.
+          [b.] end -- same as right if direction is left-to-right and left if direction is right-to-left.
+          [c.] left -- inline contents are aligned to the left edge of the line box.
+          [d.] right -- inline contents are aligned to the right edge of the line box.
+          [e.] center -- inline contents are centered within the line box.
+          [f.] justify -- inline contents are justified. Spaces out the content to line up its left and right edges to the left and right edges of the line box, except for the last line.
+
+          Example -----
+
+    -->
+    <style>
+      #heading2 {
+        font-size: 40px;
+        color: blue;
+        background-color: yellowgreen;
+        text-align: center;
+      }
+      #head2 {
+        text-align: center;
+        background-color: lightslategray;
+      }
+
+      #head3 {
+        text-align: left;
+        background-color: grey;
+      }
+
+      #head4 {
+        text-align: right;
+        background-color: darkgrey;
+      }
+      #para1 {
+        font-size: 30px;
+        background-color: skyblue;
+      }
+      .div3 {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
+      }
+      #head5 {
+        font-size: 25px;
+      }
+    </style>
+    <h1 id="heading2">[ 2. ] "text-align" property of Text</h1>
+    <h1 id="head2">Heading 1 (center-aligned)</h1>
+    <h2 id="head3">Heading 2 (left-aligned)</h2>
+    <h3 id="head4">Heading 3 (right-aligned)</h3>
+    <p id="para1">
+      The above 3 headings shows the alignment of headings as left, right and
+      center .
+    </p>
+
+    <h4 id="head5"> Example -- text-align: justify; </h4>
+    <p>
+      The text-align: justify; value stretches the lines so that each line has
+      equal width (like in newspapers and magazines).
+    </p>
+    <div class="div3">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.
+    </div>
+
+    <!--
+
+      [3.] text-decoration : "text-decoration" property of text is used to set the decoration of the text.
+          
+          Following text-decoration properties are available ----
+            [a.] text-decoration-line - This property is used to add a decoration line to text.
+            [b.] text-decoration-color - This property is used to set the color of the decoration line.
+            [c.] text-decoration-style - This property is used to set the style of the decoration line.
+            [d.] text-decoration-thickness - This property is used to set the thickness of the decoration line.
+            [e.] Shorthand Property -- text-decoration : line, color, style, thickness ;
+                 Where, text-decoration-line (required)
+                        text-decoration-color (optional)
+                        text-decoration-style (optional)
+                        text-decoration-thickness (optional).
+    -->
+    <style>
+      #heading3 {
+        color: white;
+        font-size: 40px;
+        background-color: slateblue;
+        text-align: center;
+      }
+      .head6 {
+        font-size: 25px;
+        background-color: yellow;
+      }
+      #head7 {
+        text-decoration-line: overline;
+        text-decoration-color: red;
+      }
+
+      #head8 {
+        text-decoration-line: line-through;
+        text-decoration-color: blue;
+      }
+
+      #head9 {
+        text-decoration-line: underline;
+        text-decoration-color: green;
+      }
+
+      #para2 {
+        font-size: 30px;
+        text-decoration-line: overline underline;
+        text-decoration-color: purple;
+      }
+      #head10 {
+        color: blueviolet;
+        text-decoration-line: line-through;
+        text-decoration-color: #008cba;
+        text-decoration-style: solid;
+        text-decoration-thickness: 2px;
+      }
+      #head11 {
+        text-decoration-line: underline;
+        text-decoration-color: #4caf50;
+        text-decoration-style: double;
+        text-decoration-thickness: 4px;
+      }
+      #head12 {
+        color: #008cba;
+        font-size: 30px;
+        text-decoration-line: underline;
+        text-decoration-color: black;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 20%;
+      }
+      #head13 {
+        color: violet;
+        font-size: 25px;
+        text-decoration: overline;
+        text-decoration-color: slateblue;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 5px;
+      }
+      #head14 {
+        color: tomato;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 2px;
+      }
+      #head15 {
+        font-size: 40px;
+        /* text-decoration: underline grey solid 10px; */
+        text-decoration: underline;
+      }
+    </style>
+
+    <h1 id="heading3"> [ 3. ] "text-decoration" properties of Text </h1>
+    <h1 class="head6"> [a.] text-decoration-line: overline / underline / line-through; </h1>
+    <h1 class="head6"> [b.] text-decoration-color: color_name; </h1>
+    <h1 id="head7"> Overline text decoration </h1>
+    <h1 id="head8"> Line-through text decoration </h1>
+    <h1 id="head9"> Underline text decoration </h1>
+    <p id="para2"> Overline and underline text decoration. </p>
+
+    <h1 class="head6"> [c.] text-decoration-style: solid / double / dotted / dashed / wavy & more; </h1>
+    <h1 class="head6"> [d.] text-decoration-thickness: any_size; </h1>
+    <h1 id="head10"> Heading 1 with solid decoration style & 2px thickness </h1>
+    <h1 id="head11"> Heading 1 with doubled decoration style & 4px thickness </h1>
+    <h2 id="head12"> Heading 2 with dotted decoration style & 20% thickness </h2>
+    <h2 id="head13"> Heading 2 with dashed decoration style & 5px thickness </h2>
+    <h3 id="head14"> Heading 3 with wavy decoration style & 2px thickness </h3>
+
+    <h1 class="head6"> [e.] shorthand property --- text-decoration : line, color, style, thickness ; </h1>
+    <h1 id="head15"> Hello, I'm Ashutosh, learning CSS Currently ! And I'm Enjoying It !! </h1>
+
+    <!--
+            
+      [4.] text-transform : "text-transform" property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into "uppercase" or "lowercase" letters, or "capitalize" the first letter of each word : 
+
+    -->
+    <style>
+      #heading4 {
+        font-size: 40px;
+        color: brown;
+        background-color: aquamarine;
+        text-align: center;
+      }
+      p.uppercase {
+        font-size: 45px;
+        text-transform: uppercase;
+      }
+
+      p.lowercase {
+        font-size: 45px;
+        color: slateblue;
+        text-transform: lowercase;
+      }
+
+      p.capitalize {
+        font-size: 40px;
+        color: #0000ff;
+        text-transform: capitalize;
+      }
+    </style>
+    <h1 id="heading4"> [ 4. ] "text-transform" properties of Text </h1>
+
+    <h1> [a.] text-transform : uppercase ; </h1>
+    <p class="uppercase"> This text is transformed to uppercase letters. </p>
+
+    <h1> [b.] text-transform : lowercase ; </h1>
+    <p class="lowercase"> This text is transformed to lowercase letters. </p>
+
+    <h1> [c.] text-transform : capitalize ; </h1>
+    <p class="capitalize"> This text is capitalized with every word's first letter being capital. </p>
+
+    <!--
+
+      [5.] text-spacing : "text-spacing" has the following text properties available for enhancing text styling :
+
+        [a.] text-indent - "text-indent" property sets the length of empty space (indentation) that is to be put before lines of text in a block.
+
+        [b.] letter-spacing - "letter-spacing" property is used to specify the horizontal space behaviour between the characters in a text.
+
+        [c.] line-height - "line-height" property is used to specify the space between lines.
+
+        [d.] word-spacing - "word-spacing" property is used to specify the space between the words in a text.
+      
+        [e.] white-space - "white-space" property specifies how white-space inside an element is handled.
+    -->
+    <style>
+      #heading5 {
+        font-size: 40px;
+        text-align: center;
+        background-color: rgb(126, 154, 236);
+      }
+      #head17 {
+        font-size: 35px;
+        background-color: thistle;
+      }
+      .div4 {
+        height: 100px;
+        width: 95vw;
+        border: 2px solid black;
+      }
+      .div4 p {
+        text-indent: 300px;
+      }
+      #head18 {
+        font-size: 35px;
+        background-color: rgb(218, 167, 105);
+      }
+      #head19 {
+        font-size: 30px;
+        color: #008cba;
+        letter-spacing: 15px;
+      }
+      #head20 {
+        font-size: 30px;
+        color: blue;
+        letter-spacing: -2px;
+      }
+      #head21 {
+        font-size: 35px;
+        background-color: darkgray;
+      }
+      .one {
+        color: violet;
+        word-spacing: 12px;
+      }
+      .two {
+        color: tomato;
+        word-spacing: -6px;
+      }
+
+      #head22 {
+        font-size: 35px;
+        background-color: skyblue;
+      }
+      #para3 {
+        font-size: 30px;
+      }
+      p.small {
+        font-size: 30px;
+        line-height: 0.6;
+      }
+
+      p.big {
+        font-size: 30px;
+        line-height: 1.8;
+      }
+      #head23 {
+        font-size: 35px;
+        background-color: rosybrown;
+      }
+      #para4 {
+        font-size: 30px;
+        white-space: nowrap;
+      }
+      #para5 {
+        font-size: 30px;
+        white-space: wrap;
+      }
+      #para6 {
+        font-size: 30px;
+        white-space: preserve;
+      }
+    </style>
+
+    <h1 id="heading5"> [ 5. ] "text-spacing" properties of Text </h1>
+
+    <h2 id="head17"> [a.] text-indent </h2>
+    <div class="div4">
+      <p>
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since. 'Whenever you feel
+        like criticizing anyone,' he told me, 'just remember that all the people
+        in this world haven't had the advantages that you've had.'
+      </p>
+    </div>
+
+    <h2 id="head18"> [b.] letter-spacing </h2>
+    <h2 id="head19"> This is heading 1 </h2>
+    <h2 id="head20"> This is heading 2 </h2>
+
+    <h2 id="head21"> [c.] word-spacing </h2>
+    <h1> This is a paragraph with normal word spacing. </h1>
+    <h1 class="one"> This is a paragraph with larger word spacing. </h1>
+    <h1 class="two"> This is a paragraph with smaller or almost no word spacing. </h1>
+
+    <h2 id="head22"> [d.] line-height </h2>
+    <p id="para3">
+      This is a paragraph with a standard line-height.<br />
+      The default line height in most browsers is about 110% to 120%.<br />
+    </p>
+    <p class="small">
+      This is a paragraph with a smaller line-height.<br />
+      This is a paragraph with a smaller line-height.<br />
+    </p>
+    <p class="big">
+      This is a paragraph with a bigger line-height.<br />
+      This is a paragraph with a bigger line-height.<br />
+    </p>
+
+    <h2 id="head23"> [e.] white-space </h2>
+    <h1> white-space: nowrap; </h1>
+    <p id="para4">
+      This is some text that will not wrap. This is some text that will not
+      wrap. This is some text that will not wrap. This is some text that will
+      not wrap. This is some text that will not wrap. This is some text that
+      will not wrap. This is some text that will not wrap. This is some text
+      that will not wrap. This is some text that will not wrap.
+    </p>
+
+    <h1> white-space: wrap/collapse; </h1>
+    <p id="para5">
+      This is some text that will not wrap. This is some text that will not
+      wrap. This is some text that will not wrap. This is some text that will
+      not wrap. This is some text that will not wrap. This is some text that
+      will not wrap. This is some text that will not wrap. This is some text
+      that will not wrap. This is some text that will not wrap.
+    </p>
+
+    <h1> white-space: preserve; </h1>
+    <p id="para6">
+      This is some text that will not wrap. This is some text that will not
+      wrap. This is some text that will not wrap. This is some text that will
+      not wrap. This is some text that will not wrap. This is some text that
+      will not wrap. This is some text that will not wrap. This is some text
+      that will not wrap. This is some text that will not wrap.
+    </p>
+
+    <!--
+
+      [6.] text-shadow : "text-shadow" property adds shadow to text.
+              
+        In its simplest use, we can only specify the horizontal shadow (2px) and the vertical shadow (2px), shadow like example given below -----
+
+        [a.] Declaring Shadow - text-shadow: horizontal-shadow-value, vertical-shadow-value;
+        [b.] Adding Color - text-shadow: horizontal-shadow-value, vertical-shadow-value color;
+        [c.] Adding Blur-Effect - text-shadow: horizontal-shadow-value, vertical-shadow-value, Blur, Color; 
+
+    -->
+
+    <style>
+      #heading6 {
+        font-size: 40px;
+        text-align: center;
+        background-color: plum;
+      }
+      #head24 {
+        font-size: 45px;
+        text-shadow: 2px 2px;
+      }
+      #head25 {
+        font-size: 45px;
+        text-shadow: 2px 2px red;
+      }
+      #head26 {
+        font-size: 45px;
+        text-shadow: 2px 2px 5px red;
+      }
+      #head27 {
+        font-size: 35px;
+        background-color: palevioletred;
+      }
+      #head28 {
+        font-size: 40px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      #head29 {
+        font-size: 40px;
+        text-shadow: 0 0 3px #ff0000;
+      }
+      #head30 {
+        font-size: 40px;
+        text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+      }
+      #head31 {
+        color: white;
+        font-size: 40px;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+    </style>
+
+    <h1 id="heading6"> [ 6. ] "text-shadow" properties of Text </h1>
+
+    <h1 style="background-color: yellow"> [a.] Declaring Shadow - text-shadow : 2px 2px ; </h1>
+    <h2 id="head24">Text-shadow effect !</h2>
+
+    <h1 style="background-color: tomato"> [b.] Adding Color - text-shadow : 2px 2px red ; </h1>
+    <h2 id="head25">Text Shadow Effect With Color !</h2>
+
+    <h1 style="background-color: pink"> [c.] Adding a Blur effect (5px) - text-shadow : 2px 2px 5px red ; </h1>
+    <h2 id="head26">Text Shadow With Blur Effect !</h2>
+
+    <h1 id="head27"> Shorthand -- text-shadow : horizontalShadow, VerticalShadow, Blur, Color ; </h1>
+
+    <h1 style="background-color: lightblue"> More Shadow Effects As Examples -------- </h1>
+    <h2 id="head28">Text-shadow effect !</h2>
+    <h2 id="head29">Text-shadow with red neon glow !</h2>
+    <h2 id="head30">Text-shadow with red and blue neon glow!</h2>
+    <h2 id="head31">Text-shadow effect !</h2>
+
+</body>
+</html>

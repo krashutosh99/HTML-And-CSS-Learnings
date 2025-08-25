@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title> HTML - Form Elements </title>
+</head>
+<body>
+   <style>
+      #main-heading{
+        font-size: 50px;
+        text-align: center;
+        background-color: violet;
+      }
+   </style>
+
+  <!--                                     HTML Form Elements 
+
+       The HTML <form> element can contain one or more of the following form elements mentioned below :
+
+         <input> 
+         <label>
+         <select>
+         <textarea>
+         <button>
+         <fieldset>
+         <legend>
+         <datalist>
+         <output>
+         <option>
+         <optgroup>
+
+       [1.] <select> Element ------ 
+            The <select> element defines a drop-down list by taking various text inputs as options.
+
+       [2.] <option> Element ------
+            The <option> element defines an option that can be selected. By default, the first item in the drop-down list is selected.
+
+            [a.] To define a pre-selected option, add the "selected" attribute to the option.
+            [b.] Use the "size" attribute to specify the number of visible values:
+            [c.] Use the "multiple" attribute to allow the user to select more than one value fro option.
+
+       [3.] <textarea> Element ------
+
+            The <textarea> element defines a multi-line input field (a text area).
+            [a.] The "rows" attribute specifies the visible number of lines in a text area.
+            [b.] The "cols" attribute specifies the visible width of a text area.
+
+       [4.] <button> Element ------ The <button> element defines a clickable button.
+
+       [5.] <fieldset> and <legend> Elements -----
+
+           The <fieldset> element is used to group related data in a form.
+           The <legend> element defines a caption for the <fieldset> element.
+
+       [6.] <datalist> Element ------
+
+           The <datalist> element specifies a list of pre-defined options for an <input> element. Users will see a drop-down list of the pre-defined options as they input data.
+
+           The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+       [7.] <output> Element ------
+
+           The <output> element represents the result of a calculation (like one performed by a script).
+
+       [8.] <optgroup> Element ------ 
+
+           The <optgroup> tag is used to group related options in a <select> element (drop-down list).
+           [Attribute] 	  [Value] 	  [Description]
+            disabled 	    disabled 	  Specifies that an option-group should be disabled
+            label 	        text 	    Specifies a label for an option-group
+
+    -->
+            
+       <h1 id="main-heading"> HTML Form Elments </h1>
+
+       <!-- [1.] <select> & <option> element -->
+       <h2 style="background-color: coral;"> 1 - select Element </h2>
+       <p> The select element defines a drop-down list: </p>
+       <form>
+          <label for="cars"> Choose a car: </label>
+          <select id="cars" name="cars">
+             <option value="volvo"> Volvo </option>
+             <option value="saab"> Saab </option>
+             <option value="fiat"> Fiat </option>
+             <option value="audi"> Audi </option>
+             <option value="bolero"> Bolero </option>
+          </select>
+         <input type="submit">
+       </form>
+       <br>
+
+        <form>
+          <label for="pet-select"> Choose a pet : </label>
+          <select name="pets" id="pet-select">
+            <option value=""> --Please choose an option-- </option>
+            <option value="dog"> Dog </option>
+            <option value="cat"> Cat </option>
+            <option value="hamster"> Hamster </option>
+            <option value="parrot"> Parrot </option>
+            <option value="spider"> Spider </option>
+            <option value="goldfish"> Goldfish </option>
+          </select>
+        </form>
+        <br>
+
+        <form>
+          <label for="product"> Choose a Product : </label>
+          <select name="product" id="product">
+            <option value="iphone"> iPhone </option>
+            <option value="imac"> iMac </option>
+            <option value="macbook"> Macbook </option>
+            <option value="macbook-pro"> Macbook Pro </option>
+          </select> <br/>
+
+          <label for="message"> Message </label><br/>
+          <textarea name="message" id="message" placeholder="Enter your issue" rows="4" cols="40"></textarea>
+          <br/><br/>
+
+          <input type="submit" value="Submit"/>
+        </form>
+
+        <!-- [2.] <option> element -->
+         <h2 style="background-color:rosybrown;"> 2 - option Element </h2>
+
+         <p> [a.] You can preselect an option with the "selected" attribute:</p>
+         <form>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+               <option value="volvo">Volvo</option>
+               <option value="saab">Saab</option>
+               <option value="fiat" selected >Fiat</option>
+               <option value="audi">Audi</option>
+            </select>
+           <input type="submit">
+         </form>
+
+         <p> [b.] Use the "size" attribute to specify the number of visible values.</p>
+         <form>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="3">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select><br><br>
+
+            <input type="submit">
+         </form>
+
+         <p> [c.] Use the "multiple" attribute to allow the user to select more than one value.</p>
+         <form action="/action_page.php">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="4" multiple>
+               <option value="volvo">Volvo</option>
+               <option value="saab">Saab</option>
+               <option value="fiat">Fiat</option>
+               <option value="audi">Audi</option>
+            </select><br><br>
+            <input type="submit">
+          </form>
+          <p> Hold down the Ctrl (windows) / Command (Mac) button to select multiple options. </p>
+
+          <!-- [3.] <optgroup> Element -->
+          <h2 style="background-color:palevioletred;"> 3 - optgroup Element </h2> 
+          <p>The optgroup element is used to group related options in a select element (drop-down list).</p>
+          <form action="/action_page.php">
+
+              <label for="cars">Choose a car:</label>
+              <select name="cars" id="cars">
+                <optgroup label="Swedish Cars" disabled>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                </optgroup>
+
+                <optgroup label="German Cars">
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </optgroup>
+              </select> <br><br>
+              <input type="submit" value="Submit">
+
+          </form>
+             
+
+          <!-- [4.] <textarea> Element -->
+          <h2 style="background-color:palevioletred;"> 4 - textarea Element </h2>
+          <p>The textarea element defines a multi-line input field.</p>
+          <form action="/action_page.php">
+            <textarea name="message" rows="10" cols="70">The cat was playing in the garden.</textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+          </form>
+
+          <!-- [5.] <button> Element -->
+          <h2 style="background-color: mediumslateblue;"> 5 - button Element</h2>
+
+          <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+          <!-- [6.] <fieldset> & <legend> elements -->
+          <h2 style="background-color: peachpuff;"> 6 - fieldset & legend Elements</h2>
+          <h3> Grouping Form Data with Fieldset </h3>
+          <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+          <form action="/action_page.php">
+
+            <fieldset>
+                <legend>Personal Info :</legend>
+                <label for="fname"> First name: </label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="dob"> Date Of Birth: </label><br>
+                <input type="date" id="dob" name="dob" value="25/02/1999"> <br><br>
+                <input type="submit" value="Submit">
+                
+            </fieldset>
+
+          </form>
+
+          <!-- [7.] <datalist> element -->
+          <h2 style="background-color:rgb(142, 235, 235);"> 7 - datalist Element</h2>
+          <p>The datalist element specifies/suggests a list of pre-defined options for an input element while typing.</p>
+          <form>
+
+              <input list="browsers" name="browser">
+              <datalist id="browsers">
+                 <option value="Edge">
+                 <option value="Firefox">
+                 <option value="Chrome">
+                 <option value="Opera">
+                 <option value="Safari">
+              </datalist>
+              <br><br>
+
+              <input type="submit" value="Submit">
+          </form>
+
+          <!-- [8.] <Output> Element -->
+          <h2 style="background-color: palevioletred;"> 8 - Output Element </h2>
+          <p>The output element represents the result of a calculation.</p>
+          <form
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 0 <input type="range" id="a" name="a" value="50">
+            100 + <input type="number" id="b" name="b" value="50">
+            =
+           <output name="x" for="a b"></output>
+           <br><br>
+           <input type="submit" value="Submit">
+          </form>
+     
+</body>
+</html>

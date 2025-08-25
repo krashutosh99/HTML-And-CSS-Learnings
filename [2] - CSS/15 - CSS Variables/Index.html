@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Variables in CSS </title>
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+     
+    <!-- CSS Variables -->
+     
+    <div class="container">
+        <h1> Environmental Tourism </h1>
+
+        <div class="box">
+            <h2> Nature Parks </h2>
+            <p> A nature park, or sometimes natural park, is a designation for a protected area by means of long-term land planning, sustainable resource management and limitation of agricultural and real estate developments. These valuable landscapes are preserved in their present ecological state and promoted for ecotourism purposes. In most countries nature parks are subject to legally regulated protection, which is part of their conservation laws. </p>
+        </div>
+
+        <div class="box">
+            <h2> Hills </h2>
+            <p> A hill is a landform that extends above the surrounding terrain. It often has a distinct summit, and is usually applied to peaks which are above elevation compared to the relative landmass, though not as prominent as mountains. Hills fall under the category of slope landforms. The distinction between a hill and a mountain is unclear and largely subjective, but a hill is universally considered to be not as tall, or as steep as a mountain. Geographers historically regarded mountains as hills greater than 1,000 feet (304.8 meters) above sea level. In contrast, hillwalkers have tended to regard mountains as peaks 2,000 feet (610 m) above sea level. </p>
+        </div>
+
+        <div class="box">
+            <h2> Snow Mountains </h2>
+            <p> A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges. Mountains are formed through tectonic forces, erosion, or volcanism,[1] which act on time scales of up to tens of millions of years. </p>
+        </div>
+
+        <div class="box">
+            <h2> Waterfalls </h2>
+            <p> A waterfall is any point in a river or stream where water flows over a vertical drop or a series of steep drops. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf. Waterfalls can be formed in several ways, but the most common method of formation is that a river courses over a top layer of resistant bedrock before falling onto softer rock, which erodes faster, leading to an increasingly high fall. Waterfalls have been studied for their impact on species living in and around them. </p>
+        </div>
+
+        <button id="toggle"> Toggle Button </button>
+
+    </div>
+
+    <script>
+
+        const toggleBtn = document.getElementById('toggle');
+        toggleBtn.onclick = () => {
+            document.body.classList.toggle('dark');
+        }
+
+    </script>
+    
+
+</body>
+</html>

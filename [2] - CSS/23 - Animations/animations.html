@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> CSS Animations </title>
+ <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+      
+  <!--                                             CSS Animations  
+         
+    An animation lets an element gradually change from one style to another. We can change as many as CSS Properties as we want , as often we wish.
+       
+    To use CSS animation, we must first specify some keyframes for the animation. Keyframes hold what styles the element will have at certain times.
+
+    CSS Animation Properties ----
+     [a.] @keyframes
+     [b.] animation-name
+     [c.] animation-duration
+     [d.] aniteration-delay
+     [e.] animation-iteration-count
+     [f.] animation-direction
+     [g.] animation-timing-function
+     [h.] animation-fill-mode
+     [i.] animation [shorthand]
+
+
+    [1.] @keyframes ----  When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+
+      To get an animation work, you must bind the animation to an element.   
+                   
+                   
+    [2.]  animation-iteration-count ---- The animation-iteration-count property specifies the number of times an animation should run.
+
+      The following example will run the animation 3 times before it stops:
+      Example ---- 
+        div {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          background-color: red;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: 3;
+        } 
+                
+    [3.] animation-direction ---- The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+
+     The animation-direction property can have the following values:
+
+      [a.] normal - The animation is played as normal (forwards). This is default
+      [b.] reverse - The animation is played in reverse direction (backwards)
+      [c.] alternate - The animation is played forwards first, then backwards
+      [d.] alternate-reverse - The animation is played backwards first, then forwards
+
+    [4.] animation-fill-mode ---- The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+
+      The animation-fill-mode property can have the following values:
+
+      [a.] none - Default value. Animation will not apply any styles to the element before or after it is executing
+      [b.] forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+      [c.] backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+      [d.] both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+
+      The following example lets the <div> element retain the style values from the last keyframe when the animation ends:
+        Example ----
+          div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+          } 
+
+    [5.] animation [shorthand] ----  The animation property is a shorthand property for:
+
+      animation-name
+      animation-duration
+      animation-timing-function
+      animation-delay
+      animation-iteration-count
+      animation-direction
+      animation-fill-mode
+      animation-play-state    i.e ;
+
+      animation: name|duration|timing-function|delay|iteration-count|direction|fill-mode|play-state ;
+
+      Note: Always specify the animation-duration property, otherwise the duration is 0, and will never be played. 
+        
+  -->
+
+                <!--Example 1-->
+
+                <style> 
+                   .container1 {
+                      height: 100vh;
+                      width: 100vw;
+                   }
+                   .div1 {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                   }
+                  
+                  @keyframes example {
+                    0%   {background-color:red; left:0px; top:0px;}
+                    25%  {background-color:yellow; left:200px; top:0px;}
+                    50%  {background-color:blue; left:200px; top:200px;}
+                    75%  {background-color:green; left:0px; top:200px;}
+                    100% {background-color:red; left:0px; top:0px;}
+                  }
+                </style>
+                  
+                  <div class="container1">
+                       <div class="div1"></div>
+                  </div>
+        
+                
+                <!-- Example 2 -->
+                 <div class="container">
+                     <div class="box"></div>
+                 </div>
+
+                  <div class="loader">
+                      <div class="dot"> </div>
+                      <div class="dot"> </div>
+                      <div class="dot"> </div>
+                      <div class="dot"> </div>
+                  </div>
+
+</body>
+</html>

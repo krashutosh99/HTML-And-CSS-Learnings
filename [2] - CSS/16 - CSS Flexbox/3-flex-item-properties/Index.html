@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Flexbox Item Properties </title>
+ <link rel="stylesheet" href="Style.css"/>
+</head>
+<body>
+
+  <!--                                         Flexbox Item Properties
+  
+    The direct child elements of a flex container automatically becomes flex items. The CSS properties we use for flex items are:
+
+      [1.] order
+      [2.] flex-grow
+      [3.] flex-shrink
+      [4.] flex-basis
+      [5.] flex [flex-grow + flex-shrink + flex-basis]
+      [6.] align-self
+
+  -->
+
+  <h1 class="heading"> Flexbox Item Properties </h1>
+
+  <!-- order -->
+  <h2> [ 1. ] order : The order property specifies the order of the flex items inside the flex container. The first  flex item in the code does not have to appear as the first item in the layout. 
+  The order value must be a number, default value is 0.
+  </h2>
+  <h3> Example : </h3>
+  <div class="flex-container">
+   <div style="order: 3"> 1 </div>
+   <div style="order: 2"> 2 </div>
+   <div style="order: 4"> 3 </div> 
+   <div style="order: 1"> 4 </div>
+  </div>
+
+  <!-- flex-grow -->
+  <h2> [ 2. ] flex-grow : The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. The value must be a number, default value is 0. </h2>
+  <h3> Example : </h3>
+  <div class="flex-container">
+   <div style="flex-grow: 1"> 1 </div>
+   <div style="flex-grow: 1"> 2 </div>
+   <div style="flex-grow: 8"> 3 </div>
+  </div>
+  
+  <!-- flex-shrink -->
+  <h2> [ 3. ] flex-shrink : The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. The value must be a number, default value is 1. </h2>
+  <h3> Example : </h3>
+  <div id="content">
+   <div class="box1"> A </div>
+   <div class="box2"> B </div>
+   <div class="box3"> C </div>
+   <div class="box4"> D </div>
+   <div class="box5"> E </div>
+  </div>
+
+  <!-- flex-basis -->
+  <h2> [ 4. ] flex-basis : The flex-basis property specifies the initial length of a flex item. </h2>
+  <h3> Example : </h3>
+  <div class="flex-container">
+   <div> 1 </div>
+   <div> 2 </div>
+   <div style="flex-basis: 200px"> 3 </div>
+   <div> 4 </div>
+  </div> 
+
+  <!-- [5.] flex [flex-grow + flex-shrink + flex-basis] -->
+  <h2> [ 5. ] flex : The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. </h2>
+  <h3> Example : </h3>
+  <div class="flex-container">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div style="flex: 0 0 200px"> 3 </div>
+    <div> 4 </div>
+  </div>
+
+  <!-- [6.] align-self -->
+   <h2> [ 6. ] align-self : The align-self property specifies the alignment for the selected item inside the flexible container. The align-self property overrides the default alignment set by the container's align-items property.
+  </h2>
+  <h3> Example : </h3>
+  <div class="flex-container2">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div style="align-self: center"> 3 </div>
+    <div> 4 </div>
+  </div>
+
+  <br/> 
+   
+  <div class="flex-container2">
+    <div> 1 </div>
+    <div style="align-self: flex-start"> 2 </div>
+    <div style="align-self: flex-end"> 3 </div>
+    <div> 4 </div>
+  </div>
+
+</body>
+</html>

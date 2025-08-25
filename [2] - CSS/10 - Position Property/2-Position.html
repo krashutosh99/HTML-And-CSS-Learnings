@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Position Property in CSS </title>
+  <link rel="stylesheet" href="StyleP.css" />
+  <style>
+       h1 {
+           text-align: center;
+       }
+       div { border: 1px solid black; }
+       img { margin: 10px; }
+
+       /* image2[Blue] is being set as pos:relative in accordance with document(DOM as relative) reference */
+       .image2 { position: relative; 
+          top: 100px; left: 10px; }
+
+       .container { position: relative; }
+
+        /* image3[Purple] is being set as pos:absolute in accordance with div container as relative reference. Gap will be filled by image4 */
+       .image3 {
+        position: absolute;
+        top: 200px;
+        right: 300px;
+       }
+
+       .container { height: 700px; background-color: bisque; }
+       
+        /* image4[Red] is being set as pos:fixed, it will remain fixed at the given place. */
+       .image4 {
+        position: fixed;
+       }
+       
+        /* image1[Green] is being set as pos:sticky. Will scroll after encountering new parent container. */
+        .image1{
+           position: sticky;
+           top:200px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 900px;
+        }
+
+  </style>
+</head>
+<body>
+          <h1> Position Properties In CSS </h1>
+          <div class="container">
+
+                     <img src="assets/sup1.JPG"
+                          alt="poster 1"
+                          class="image1"
+                          width="270px"
+                          height="200px"
+                     />
+
+                     <img src="assets/sup2.JPG"
+                          alt="poster 2"
+                          class="image2"
+                          width="270px"
+                          height="200px"
+                     />
+
+                     <img src="assets/sup3.JPG"
+                          alt="poster 3"
+                          class="image3"
+                          width="270px"
+                          height="200px"
+                     />
+
+                     <img src="assets/sup4.JPG"
+                          alt="poster 4"
+                          class="image4"
+                          width="270px"
+                          height="200px"
+                     />
+          </div>
+
+          <div class="box"> </div>
+
+   
+</body>
+</html>

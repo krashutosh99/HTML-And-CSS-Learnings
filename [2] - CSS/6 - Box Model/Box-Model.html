@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Box Model In CSS </title>
+</head>
+<body>
+  <style> 
+    #main-heading {font-size: 60px; text-align: center; background-color:palevioletred;} 
+    #img1 {
+      margin-left: 80px;
+    }
+    #heading {font-size: 40px; text-align: center; background-color:violet;}
+  </style>
+  
+  <!--                                          Box Model In CSS
+  
+      All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout of HTML elements. It consists of : 
+        [a.] the actual content [HTML Element]
+        [b.] padding, 
+        [c.] border and
+        [d.] margin
+
+        The image below illustrates the box model in CSS ::
+  -->
+        <h1 id="main-heading"> 6 - BOX MODEL IN CSS </h1>
+        <h3 id="heading"> [ 1. ] - "Content/Element" in Box - Model </h3>
+        <img id="img1" src="./assets/box-model.png" style="height: 400px; width: 1100px;" alt="Box Model In CSS"/>
+
+  <!-- Explanation of the different parts of BOX MODEL ------
+
+        [1.] Content -- The content of the box, where text and images or any other HTML elements appear.
+        [2.] Padding -- "padding" properties provides space around an element's content, inside of any defined borders.The padding is transparent by default.
+             
+        CSS properties available for specifying the padding for each side of an element: ----
+          padding-top
+          padding-right
+          padding-bottom
+          padding-left
+          Shorthand property -- padding : top, right, bottom, left;
+
+          All the padding properties can have the following values:
+            length - specifies a padding in px, pt, cm, etc.
+            % - specifies a padding in % of the width of the containing element
+            inherit - specifies that the padding should be inherited from the parent element
+
+          Note: Negative values are not allowed.
+  -->
+        <style>
+           #heading1 { font-size: 40px; text-align: center; background-color: lightblue; }
+           #div1 {
+            border: 1px solid black;
+            background-color:tomato;
+            width:900px;
+            padding-top: 90px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+          }
+        </style>
+
+        <h3 id="heading1"> [ 2. ] - "padding" in Box - Model </h3>
+        <h2> Using individual padding properties ---- </h2>
+        <div id="div1">This div element has a top padding of 90px, a right padding of 50px, a bottom padding of 50px, and a left padding of 10px.</div>
+
+        <!--
+          [a.] If the padding property has three values:[ padding: 25px 50px 75px; ] then ----
+                top padding - 25px
+                left & right padding - 50px
+                bottom padding - 75px
+
+          [b.] If the padding property has two values: [ padding: 25px 50px; ] then ----
+                top & bottom padding - 25px
+                left & right padding - 50px
+
+          [c.] If the padding property has four values:[ padding: 25px 50px 75px 100px; ] then ----
+                top padding - 25px
+                right padding - 50px
+                bottom padding - 75px
+                left padding - 100px
+ 
+          [d.] If the padding property has one value: [ padding: 25px; ] then ----
+                all four side paddings[top, right, bottom, left] - 25px
+        -->
+  
+  <!--
+      [3.] Border -- "Border" properties allow you to specify the style, width, and color of an element's border, its a space between padding and margin.
+
+      CSS properties available for specifying the padding for each side of an element: ----
+        [a.] border-width - specifies the width of the border
+        [b.] border-style - specifies the style of the border (like "solid", "dotted", "dashed" etc.)
+        [c.] border-color - specifies the color of the border
+        [d.] border - shorthand property for setting all the border properties[width, style, color] in one declaration.
+        [e.] border-radius - a property for creating rounded corners on an element's border.
+  -->  
+        <style>
+
+          #heading2 {font-size: 40px; text-align: center; background-color:peru; }
+          .div2 {
+            width: 95vw;
+            height: 200px;
+            border: 4px solid black;
+            background-color:darksalmon;
+          }
+          .div2 p { text-align: center; font-size: 25px; }
+          p.normal { 
+            border: 2px solid red; 
+            padding: 5px; 
+          }
+
+          p.round1 { 
+            border: 2px solid red; 
+            border-radius: 5px; 
+            padding: 5px; 
+          }
+          p.round2 { border: 2px solid red; border-radius: 8px; padding: 5px; }
+          p.round3 { border: 2px solid red; border-radius: 12px; padding: 5px; }
+          #heading3 { font-size: 30px; }
+
+        </style>
+
+        <h3 id="heading2"> [ 3. ] - "border" in Box - Model </h3>
+        <div class="div2">
+          <p> This div container element has a border of width 4px and border style is solid with border color black along all four sides. </p>
+        </div>
+
+        <h5 id="heading3"> "border-radius" in Border : This property is used to add rounded borders to an element ! </h5>
+        <p class="normal"> Normal border </p>
+        <p class="round1"> Round border </p>
+        <p class="round2"> Rounder border </p>
+        <p class="round3"> Roundest border </p>
+
+    <!--  
+        [4.] Margin -- "margin" clears an area around an element (outside the border), of any defined border. 
+          
+          CSS properties available for specifying the margin for each side of an element: ----
+            margin-top
+            margin-right
+            margin-bottom
+            margin-left
+            Shorthand property -- margin : top, right, bottom, left;
+    -->
+          <style>
+            #heading4 {
+              font-size: 40px;
+              text-align: center;
+              background-color:darkgray;
+            }
+            #div3 {
+              border: 1px solid black;
+              height: 300px;
+              margin-top: 20px;
+              margin-bottom: 200px;
+              margin-right:30px;
+              margin-left: 80px;
+              background-color:mediumpurple;
+            }
+            #div3 p { text-align: center; font-size: 20px; }
+          </style>
+          <h3 id="heading4"> [ 4. ] - "margin" in Box - Model </h3>
+          <h1> Using individual margin properties ---- </h1>
+          <div id="div3">
+            <p>This div container element has a top margin of 20px, a right margin of 30px, a bottom margin of 200px, and a left margin of 80px. </p>
+          </div>
+    <!--
+          [a.] If the margin property has four values: margin: 25px 50px 75px 100px; then ----
+                  top margin - 25px
+                  right margin - 50px
+                  bottom margin - 75px
+                  left margin - 100px
+
+          [b.] If the margin property has three values: margin: 25px 50px 75px; then ----
+                  top margin - 25px
+                  left and right margins - 50px
+                  bottom margin - 5px
+
+          [c.] If the margin property has two values: margin: 25px 50px; then -----
+                  top and bottom margins - 25px
+                  right and left margins - 50px
+            
+          [d.] If the margin property has one value: margin: 25px; then -----
+               
+                  all four margins[top, right, bottom, left] - 25px
+
+        [Note] ----
+               [a.] The auto Value --- "auto" sets the margin property to auto to horizontally center the element within its container.
+               The element will then take up the specified width, and the remaining space will be split equally between the left and right margins. 
+
+    -->
+        <style>
+          #div4 {
+            height: 200px;
+            padding: 50px;
+            border: 2px solid black;
+          }
+          #div5 {
+            height: 100px;
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid red;
+          }
+        </style>
+      
+        <h1> Use of margin: auto ; </h1>
+        <div id="div4">
+          <div id="div5"> This child div will be horizontally centered because it has margin : auto; </div>
+        </div>
+                           
+</body>
+</html>

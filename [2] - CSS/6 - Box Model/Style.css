@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+ text-align: center;
+ font-size: 3em;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 20px solid red;
+    padding: 30px;
+    margin: 40px;
+}
+

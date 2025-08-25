@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=\, initial-scale=1.0"/>
+ <title> HTML - Div & Span Elements </title>
+</head>
+<body>
+
+  <!--                                      HTML Div & Span Elements
+
+        [1.] Div Element -----
+
+          The <div> element is used as a container for other HTML elements. 
+          <div> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.
+
+  -->
+          <h1 style="text-align: center;"> HTML - Div & Span Elements </h1>
+
+          <h1 style="font-size: 40px;"> 1 - Div Element </h1>
+
+            <!-- [1]-Div takes full width on web page-->
+            <h2>[A.] Takes full width, since div is a block element.</h2>
+            <p> <strong> A div element takes up all the available width: </strong> </p>
+            <style>
+              #div1 {
+                background-color: #FFF4A3;
+              }
+              </style>
+            Lorem Ipsum <div id="div1">I am a div</div> dolor sit amet.
+            <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+            <hr>
+  
+            <!-- [2]-div as a container-->
+            <h2> [B.] div as a container </h2>
+            <p><strong> The div element is often used to group sections of a web page together.</strong></p>
+                <!--Example-->
+                <style>
+                  #div2 {
+                    background-color: lightblue;
+                  }
+                  </style>
+                <div id="div2">
+                  <h2>London</h2>
+                  <p>London is the capital city of England.</p>
+                  <p>London has over 9 million inhabitants.</p>
+                </div>
+                
+                <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+                <hr>
+
+            <!-- [3]-Center aligning a <div> element -->
+            <h2>[C.] Center aligning a div element</h2>
+            <p> <strong>If you have a div element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto. </strong> </p>
+            <style>
+              #div3 {
+               width: 400px;
+               margin: auto;
+               background-color: tomato;
+             }
+           </style>
+
+           <div id="div3">
+             <h2>London</h2>
+             <p>London is the capital city of England.</p>
+             <p>London has over 9 million inhabitants.</p>
+           </div>
+           <hr>
+
+           <!-- [4]-Multiple Div Elements -->
+            <h2>[D.] Multiple Div Elements </h2>
+            <p><strong> We can have many div containers on the same page. </strong> </p>
+            <div style="background-color: rgb(169, 168, 168);">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 9 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 700,000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has over 4 million inhabitants.</p>
+            </div>
+            
+            <p>CSS styles are added to make it easier to separate the divs, and to make them more pretty:</p>
+            <hr>
+
+            <!-- [5]-Aligning <div> elements side by side-->
+            <h2> [E.] Aligning div elements side by side </h2>
+            <p> <strong>There are different methods for aligning elements side by side, all include some CSS styling. We will look at the most common methods, given below : </strong></p>
+            <ol>
+              <li> Using Float Property </li>
+              <li> Using Inline-Block Property </li>
+              <li> Using Flex </li>
+              <li> Using Grid </li>
+            </ol>
+
+              <!-- Using Float Property -->
+              <h3> [a.] Using Float </h3>
+              <p> The CSS float property is used for positioning and formatting content and allows elements to be positioned horizontally, rather than vertically. </p>
+              <style>
+                .mycontainer {
+                  width:100%;
+                  overflow:hidden;
+                }
+                div.mycontainer div {
+                  width:30%;  
+                  float:left;
+                }
+                </style>
+                
+                <div class="mycontainer">
+                
+                  <div style="background-color:rgb(243, 130, 110);">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 9 million inhabitants.</p>
+                  </div>
+                  
+                  <div style="background-color:#FFC0C7;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 700,000 inhabitants.</p>
+                  </div>
+                  
+                  <div style="background-color:#D9EEE1;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has over 4 million inhabitants.</p>
+                  </div>
+                
+                </div>
+
+                <!-- Using Inline-Block Property -->
+                <h3> [b.] Using Inline-Block Property </h3>
+                <p> Change the div element's display property from block to inline-block, the <div> elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other. </p>
+                <style>
+                  #div4, #div5, #div6 {
+                    width:30%;  
+                    display:inline-block;
+                  }
+                  </style>
+                  <body>
+                  
+                  <div id="div4" style="background-color:#FFF4A3;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 9 million inhabitants.</p>
+                  </div>
+                  
+                  <div id="div5" style="background-color:#FFC0C7;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 700,000 inhabitants.</p>
+                  </div>
+                  
+                  <div id="div6" style="background-color:#D9EEE1;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has over 4 million inhabitants.</p>
+                  </div>
+
+                  <!-- Using Flex Property -->
+                  <h3> [c.] Using Flex Property </h3>
+                  <p> The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.
+                  To make the CSS flex method work, surround the div elements with another div element and give it the status as a flex container. </p>
+                  <style>
+                    .mycontainer1 {
+                      display: flex;
+                    }
+                    .mycontainer1 > div {
+                       width:33%;
+                    }
+                  </style>
+                  <div class="mycontainer1">
+                  
+                    <div style="background-color:#FFF4A3;">
+                      <h2>London</h2>
+                      <p>London is the capital city of England.</p>
+                      <p>London has over 9 million inhabitants.</p>
+                    </div>
+                    
+                    <div style="background-color:#FFC0C7;">
+                      <h2>Oslo</h2>
+                      <p>Oslo is the capital city of Norway.</p>
+                      <p>Oslo has over 700,000 inhabitants.</p>
+                    </div>
+                    
+                    <div style="background-color:#D9EEE1;">
+                      <h2>Rome</h2>
+                      <p>Rome is the capital city of Italy.</p>
+                      <p>Rome has over 4 million inhabitants.</p>
+                    </div>
+                  
+                  </div>
+
+                  <!-- Using Grid Property -->
+                   <h3> [d.] Using Grid Property </h3>
+                   <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+
+                   Sounds almost the same as flex, but has the ability to define more than one row and position each row individually. <br> <br>
+                    
+                   The CSS grid method requires that you surround the div elements with another div element and give the status as a grid container, and you must specify the width of each column. </p>
+                    <style>
+                      .grid-container {
+                        display: grid;
+                        grid-template-columns: 33% 33% 33%;
+                      }
+                      </style>
+                    <div class="grid-container">
+                      
+                      <div style="background-color:#FFF4A3;">
+                        <h2>London</h2>
+                        <p>London is the capital city of England.</p>
+                        <p>London has over 9 million inhabitants.</p>
+                      </div>
+                      
+                      <div style="background-color:#FFC0C7;">
+                        <h2>Oslo</h2>
+                        <p>Oslo is the capital city of Norway.</p>
+                        <p>Oslo has over 700,000 inhabitants.</p>
+                      </div>
+                      
+                      <div style="background-color:#D9EEE1;">
+                        <h2>Rome</h2>
+                        <p>Rome is the capital city of Italy.</p>
+                        <p>Rome has over 4 million inhabitants.</p>
+                      </div>
+                      
+                    </div>
+  <!--
+
+          [2.] Span Element -----
+
+             The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or scripts to specific parts of text or elements within a document.
+
+             While it doesn’t affect the layout or appearance on its own, it serves as a target for CSS styling and JavaScript interactions, making it ideal for customizing small portions of content without disrupting the flow of surrounding elements.
+
+             Syntax :: 
+                  <span class=""> Some Text </span> 
+                
+  -->
+
+         <h1 style="font-size: 40px;"> 2 - Span Element </h1>
+
+         <!-- style for span tag  -->
+         <style>
+            #span1, #span2, #span3 {
+              color: green;
+              text-decoration: underline;
+              font-style: italic;
+              font-weight: bold;
+              font-size: 50px;
+            }
+         </style>
+
+         <span id="span1"> GeeksforGeeks </span><br />
+         <span id="span2"> GeeksforGeeks </span><br />
+         <span id="span3"> GeeksforGeeks </span><br />
+         <br><br>
+
+         <!-- span tags with inline style/css  -->
+         <span style="background-color:powderblue; font-size: 30px;">GfG</span>
+         <span style="background-color: lightgray; font-size: 30px;">-Contribute-</span>
+         <span style="background-color: yellow; font-size: 30px ;">Article</span>
+         <span style="background-color: lightgreen; font-size: 30px;">GCET</span>
+         <br><br>
+         
+         <style>
+           li span {
+             background: gold;
+             font-size: 30px;
+          }
+         </style>
+         <li>
+          <span>
+            <a href="portfolio.html" target="_blank">See my portfolio</a>
+          </span>
+        </li>
+
+        <hr/>
+       
+
+       <!-- Header -->
+       <div>
+         <h1>My Website</h1>
+         <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </div>
+
+       <!-- Sections -->
+       <div>
+          <h2>Section One</h2>
+          <p>This is the first paragraph in <span>section one</span></p>
+          <p>This is the second paragraph in <span>section one</span></p>
+       </div>
+
+       <div>
+          <h2>Section Two</h2>
+          <p>This is the first paragraph in <span>section two</span></p>
+          <p>This is the second paragraph in <span>section two</span></p>
+       </div>
+
+       <!-- Footer -->
+       <div> &copy; 2024 My Website </div>
+
+</body>
+</html>

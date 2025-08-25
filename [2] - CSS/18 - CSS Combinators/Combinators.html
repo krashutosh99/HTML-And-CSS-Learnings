@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> CSS Combinators </title>
+  <style> 
+   #main-heading {
+    font-size: 50px;
+    text-align: center;
+    background-color:thistle;
+   } 
+ </style>
+</head>
+<body>
+
+
+   <!--                                      CSS Combinators 
+
+      A combinator is something that explains the relationship between the selectors.
+      A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+      There are four different combinators in CSS:
+
+       [1.] Descendant combinator (space)
+       [2.] Child combinator (>)
+       [3.] Next sibling combinator (+)
+       [4.] Subsequent-sibling combinator (~) 
+
+   -->
+
+   <!-- [1.] Descendant Combinator - 
+      The descendant combinator matches all elements that are descendants of a specified element.
+
+   -->
+         <h1 id="main-heading"> CSS Combinators </h1>
+
+         <style>
+            #div1 p {
+               background-color:tomato;
+            }
+         </style>
+         <h2 style="background-color: plum;"> [1.] Descendant Selector </h2>
+         <p> The descendant selector matches all elements that are descendants of a specified element. </p>
+         <div id="div1">
+            <p> Paragraph 1 in the div. </p>
+            <p> Paragraph 2 in the div. </p>
+            <section> <p> Paragraph 3 in the div. </p> </section>
+         </div>
+               
+         <p> Paragraph 4. Not in a div. </p>
+         <p> Paragraph 5. Not in a div. </p>
+
+   <!-- [2.] Child Combinator (>)
+
+        The child combinator selects all elements that are the children of a specified element.
+
+   -->
+        <h2 style="background-color: thistle;"> [2.] Child Combinators </h2>
+        <style>
+         #div2 > p {
+           background-color:turquoise;
+         }
+         </style>
+         <p> The child selector (>) selects all elements that are the children of a specified element. </p>
+         <div id="div2">
+           <p> Paragraph 1 in the div. </p>
+           <p> Paragraph 2 in the div. </p>
+           <section>
+             <!-- not a Child but a Descendant -->
+             <p> Paragraph 3 in the div (inside a section element). </p>
+           </section>
+           <p> Paragraph 4 in the div. </p>
+         </div>
+         
+         <p> Paragraph 5. Not in a div. </p>
+         <p> Paragraph 6. Not in a div. </p>
+
+   <!--  [3.] Next Sibling Combinator (+)
+
+         The next sibling combinator is used to select an element that is directly after another specific element.
+         Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+   -->
+         <h2 style="background-color: violet;"> [3.] Next Sibling Combinator </h2>
+         <style>
+            #div3 + p {
+               background-color: cornflowerblue;
+            }
+            #div4 + p {
+               background-color: cornflowerblue;
+            }
+         </style>
+         <p>The + selector is used to select an element that is directly after another specific element.</p>
+         <p>The following example selects the first p element that are placed immediately after div elements:</p>
+               
+         <div id="div3">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+         </div>
+               
+         <p>Paragraph 3. After a div.</p>
+         <p>Paragraph 4. After a div.</p>
+               
+         <div id="div4">
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+         </div>
+               
+         <p>Paragraph 7. After a div.</p>
+         <p>Paragraph 8. After a div.</p>
+
+   <!--  [4.] Subsequent-sibling Combinator (~)
+
+        The subsequent-sibling combinator selects all elements that are next siblings of a specified element.
+               
+   -->
+        <h2 style="background-color: wheat;"> [4.] Subsequent-sibling Combinator </h2>
+        <style>
+         #div5 ~ p {
+           background-color: yellow;
+         }
+         </style>
+         <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+         <p>Paragraph 1.</p>
+         
+         <div id="div5">
+           <p>Paragraph 2.</p>
+         </div>
+         
+         <p>Paragraph 3.</p>
+         <code>Some code.</code>
+         <p>Paragraph 4.</p>
+             
+</body>
+</html>

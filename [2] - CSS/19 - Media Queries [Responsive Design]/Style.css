@@ -1,0 +1,53 @@
+body {
+    background-color: red;
+}
+
+/* Media Queries Examples 
+  
+   [1.] min-width = starting from "x" width.
+   [2.] max-width = Upto "x px" width.
+   [3.] portrait mode - when height exceeds, given width limit. 
+   [4.] landscape mode - when width exceeds, given height limit.       */
+
+    /*  @media (width <= 400px) {
+         body {
+            background-color: cornflowerblue;
+         }
+      }
+     
+         OR 
+    */     
+        @media (max-width: 400px) {
+            body {
+                background-color: brown;
+            }
+         }
+
+    /* @media (orientation: portrait) {
+        body {
+            background-color: green;
+        }
+     
+    */
+
+       @media (max-width: 200px) {
+           body {
+               background-color: gold;
+           }
+       } 
+
+       @media (min-width: 450px) and (max-width: 600px) {
+          body {
+             background-color:slateblue
+          }
+       }
+
+    
+
+
+
+
+
+
+
+

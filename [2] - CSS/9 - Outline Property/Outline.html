@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title> CSS Outline Property </title>
+ <link rel="stylesheet" href="Outline.css" />
+</head>
+<body>
+
+  <!--                                       CSS OUTLINE PROPERTY
+
+    [1.] An outline is a line drawn outside the element's border.
+
+      Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.   
+
+    [2.]  Outline Example -->
+
+    <style>
+      .heading {
+        text-align: center;
+        font-size: 2rem;
+      }
+      p {
+        border: 2px solid black;
+        outline: #4caf50 solid 10px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+
+    <h2 class="heading"> CSS Outline Property </h2>
+    <p> This element has a 2px black border and a green outline with a width of 10px. </p>
+    <h2> [ 1 ] - Outline Image Description </h2>
+    <image class="img" src="css-outline-desc-image.png" alt="css-outline-image"> </image>
+
+  <!-- 
+        
+    [3.] CSS has the following outline properties : ----
+
+        -> outline-style
+        -> outline-color
+        -> outline-width AND
+        -> outline [shorthand]
+        -> outline-offset
+
+        [a.] outline-style ---- The outline-style property specifies the style of the outline, and can have one of the following values :
+
+          dotted - Defines a dotted outline
+          dashed - Defines a dashed outline
+          solid - Defines a solid outline
+          double - Defines a double outline
+          groove - Defines a 3D grooved outline
+          none - Defines no outline
+          hidden - Defines a hidden outline.
+
+
+        [b.] outline-width ---- The outline-width property specifies the width of the outline, and can have one of the following values :
+
+          thin (typically 1px)
+          medium (typically 3px)
+          thick (typically 5px)
+          A specific size (in px, pt, cm, em, etc).
+
+        [c.] outline-color ---- The outline-color property is used to set the color of the outline. The color can be set by : ----
+
+          name - specify a color name, like "red"
+          HEX - specify a hex value, like "#ff0000"
+          RGB - specify a RGB value, like "rgb(255,0,0)"
+          HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+
+        [d.] outline [shorthand]---- The outline property is a "shorthand property" for setting the following individual outline properties : ----
+                     
+          -> outline-width
+          -> outline-style (required)
+          -> outline-color
+
+            i.e; [ outline: width style color; ]
+
+
+        [e.] outline offset ---- The outline-offset property adds "space" between an outline and the edge/border of an element. The space between an element and its outline is transparent.   -->
+
+    <!-- Outline Offset Example --> 
+
+    <style>
+      .paragraph {
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+    </style>
+    <h2> [ 2 ] - The outline-offset Property </h2>
+    <p class="paragraph"> This paragraph has an outline offset of 15px outside the border edge. </p>
+
+    <!-- [Note] -- The outline property is specified as one, two, or three values from the list above. The order of the values does not matter. -->
+
+    <!-- Outline Examples -->
+    <style>
+      p.ex1 {
+        outline: dashed;
+        margin: 50px;
+      }
+
+      p.ex2 {
+        outline: dotted red;
+        margin: 50px;
+      }
+
+      p.ex3 {
+        outline: 20px solid yellow;
+        margin: 50px;
+      }
+
+      p.ex4 {
+        outline: 20px ridge pink;
+        margin: 50px;
+      }
+    </style>
+
+    <h2> [ 3 ] - The outline Property </h2>
+    <p class="ex1"> A dashed outline. </p>
+    <p class="ex2"> A dotted red outline. </p>
+    <p class="ex3"> A 20px solid yellow outline. </p>
+    <p class="ex4"> A 20px ridge pink outline. </p>
+
+
+</body>
+</html>

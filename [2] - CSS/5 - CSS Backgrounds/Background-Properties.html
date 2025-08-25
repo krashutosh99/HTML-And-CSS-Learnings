@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> CSS Background Properties </title>
+ <style> 
+    #main-heading {
+      font-size: 50px;
+      text-align: center;
+      background-color:palevioletred;
+    } 
+  </style>
+</head>
+<body>
+  
+  <!--                            CSS Background Properties
+
+    CSS background properties are used to add background effects for elements. Following are the list of CSS background properties : -----
+          
+      [1.] background-color
+      [2.] background-image
+      [3.] background-repeat
+      [4.] background-position
+      [5.] background-attachment 
+      Shorthand Property -- background 
+
+      [1.] background-color : Specifies the background color of an element.
+
+        Example -----
+  -->
+        <h1 id="main-heading"> 5 - BACKGROUND PROPERTIES IN CSS </h1>
+        <style>
+          #heading {
+            background-color: green;
+          }
+      
+          #DivCon {
+            background-color: lightblue;
+          }
+      
+          #para {
+            background-color: yellow;
+          }
+        </style>
+        <h1 id="heading"> 1 - CSS "background-color" Example ! </h1>
+        <div id="DivCon"> This is a text inside a div element.
+          <p id="para"> This paragraph has its own background color.</p>
+          We are still in the div element.
+        </div>
+    <!--
+
+      [2.] background-image : Specifies the background image of an element. By default, the image is repeated so it covers the entire element.
+
+        Example-----
+    -->
+        <style>
+          .Div2 {
+            height: 400px;
+            width: 600px;
+            text-align: center;
+            background-image: url("./assets/tulips-56.jpg");
+          }
+          .Div2 p {font-size: 25px;}
+          #heading2{background-color: tomato;}
+        </style>
+             
+        <h1 id="heading2"> 2 - CSS "background-image" Example ! </h1>
+        <div class="Div2">
+          <p> This Div Container has an image as the background ! </p>
+        </div>
+
+    <!--
+          
+      [3.] background-repeat : By default, the "background-image" property repeats an image both horizontally and vertically. So, to control the repetition of images, we use the "background-repeat" property.
+
+      Following are the values of the "background-repeat" property : 
+              
+       [a.] repeat : background image is repeated both vertically and horizontally.
+       [b.] repeat-x : background image is repeated only horizontally [x-axis].
+       [c.] repeat-y : background image is repeated only vertically [y-axis].
+       [d.] no-repeat : background image is not repeated.
+
+        Example-----
+    --> 
+        <style>
+          #heading3 {
+            background-color:violet;
+          }
+          .Div3 {
+            height: 500px;
+            width: 900px;
+            text-align: center;
+            background-image: url("./assets/cosmea-65.jpg");
+            background-repeat: repeat-x;
+          }
+          .Div3 p {font-size: 25px;}
+          .Div4 {
+            height: 500px;
+            width: 600px;
+            text-align: center;
+            background-image: url("./assets/cosmea-65.jpg");
+            background-repeat: no-repeat;
+          }
+          .Div4 p {font-size: 25px;}
+        </style>
+
+        <h1 id="heading3"> 3 - CSS "background-repeat" Example ! </h1>
+        <div class="Div3">
+          <p> This Div Container's background image is repeated only horizontally!</p>
+        </div>
+
+        <div class="Div4">
+          <p> This Div Container's background image is not repeated !</p>
+        </div>
+
+    <!--  [4.] background-position : Specifies the starting position of the background image.
+       
+          Available Key Values :: --- top, bottom, left, right, center, bottom 10px right 20px, inherit etc.
+
+          Example ----- 
+    -->
+          <style>
+            #heading4{background-color:peru;}
+            #Div5 {
+              background-color: #ffee99;
+              background-repeat: no-repeat;
+              width: 1000px;
+              height: 600px;
+              margin-bottom: 12px;
+            }
+                 
+            #Div5 p {font-size: 25px;}
+            .example-one {
+              background-color: #ffee99;
+              background-image: url(./assets/star-istock-90.jpg);
+              background-repeat: no-repeat;
+              background-position:  top right ;
+            }
+          </style>
+          <h1 id="heading4"> 4 - CSS "background-position" Example ! </h1>
+          <div id="Div5" class="example-one"> 
+            <p> In this Div the Image "Star" is positioned at top right. </p>
+          </div>
+
+    <!--  
+        [5.] background-attachment : Specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+           
+          Key Values : --- scroll, fixed, local, initial, inherit etc.
+
+          Example -----
+    -->
+        <style>
+          #heading5{background-color:darkorchid}
+          #Div6 {
+            height: 500px;
+            width: 1100px;
+            border: 2px solid black;
+            background-image: url("./assets/tulips-56.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            margin-right: 200px;
+            background-attachment: fixed;
+          }
+        </style>
+        <h1 id="heading5"> 5 - CSS "background-attachment" Example ! </h1>
+        <div class="div" id="Div6">
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum dicta deleniti, ab distinctio saepe, vel accusantium quia quod iure dignissimos illum laborum facere inventore quaerat cupiditate qui rerum pariatur consequatur repudiandae </p>
+        </div>
+
+    <!-- Shorthand Property : 
+       
+          background : (color, image, repeat, attachment, position) ;
+         
+         The background property is a shorthand property for setting the individual background properties in a single declaration. It does not matter if one of the property values is missing, as long as the other ones are in this order.
+
+          Example -----
+            div {
+              background-color: #ffffff;
+              background-image: url("img_tree.png");
+              background-repeat: no-repeat;
+              background-position: right top;
+            }
+
+            This can be written as :
+            div {
+              background: #ffffff url("img_tree.png") no-repeat right top;
+            }
+         
+  -->
+      
+</body>
+</html>

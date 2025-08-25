@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.outer-box {
+  width: 100vw;
+  height: 120vh;
+  background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+}
+
+.inner-box {
+  margin: 0 auto; /* auto [in left-right] makes div into center of parent div. */
+  width: 400px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  padding: 20px 40px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 9px 9px 5px #065991;
+  z-index: 2;
+}
+
+.header-signup h1 {
+  font-size: 2.8rem;
+  color: #212121;
+}
+
+.header-signup p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.signup-main {
+  margin: 20px 0;
+}
+
+.signup-main p {
+  margin: 10px 0;
+}
+
+.signup-main p label {
+  margin: 4px 0;
+  display: block;
+  font-weight: 600;
+}
+.signup-main p input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#submit {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #04609e;
+}
+
+.signup-footer p {
+  color: #2d2c2c;
+  text-align: center;
+}
+.signup-footer p a {
+  color: #045e9a;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(to top right, #ffffff33, #ffffffff);
+  position: absolute;
+}
+
+.c1 {
+  top: 100px;
+  left: 40px;
+}
+.c2 {
+    bottom: 200px;
+    right: 50px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Overflow Property </title>
+ <style>
+   #main-heading {
+    font-size: 50px;
+    text-align: center;
+    background-color:palevioletred;
+   } 
+
+   h1 {
+    text-align: center;
+    font-size: 40px;
+   }
+
+   .div1 {
+    background-color: coral;
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    overflow: visible;
+    margin-bottom: 90px;
+   }
+
+   .div2 {
+    background-color: lightseagreen;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    overflow: hidden;
+   }
+
+   .div3 {
+    background-color: skyblue;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    overflow: scroll;
+   }
+
+   .div4 {
+    background-color: hotpink;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    overflow: auto;
+   }
+ </style>
+</head>
+<body>
+  
+   <!--                                         CSS Overflow Property 
+
+      The CSS overflow property controls what happens to content that is too big to fit into an area.
+      The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+         Overflow property has the following values:
+            [a.] visible - Default. The overflow is not clipped. Content renders outside the element's box.
+            [b.] hidden - The overflow is clipped, and the rest of the content will be invisible.
+            [c.] scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.
+            [d.] auto - Similar to scroll, but it adds scrollbars only when necessary.
+
+            Note: The overflow property only works for block elements with a specified height.
+
+   -->
+         <h1 id="main-heading"> CSS Overflow Properties </h1>
+
+         <!--  [1.]  overflow: visible ;
+
+            By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box: -->
+
+            <h2> [1.] overflow: visible ; </h2>
+              
+            <div class="div1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi deserunt ea laudantium perspiciatis sint dignissimos ex tenetur placeat illum dolore excepturi veniam reprehenderit, error labore atque eius? Eveniet iusto sequi exercitationem enim quae, excepturi quis reprehenderit consectetur possimus nisi saepe consequuntur praesentium nostrum tempora sit voluptatem natus nam placeat molestias non autem corporis quaerat nesciunt. Ipsa error repellat eveniet architecto, libero neque accusantium facere maxime vero at molestiae eum omnis culpa recusandae deleniti natus autem earum aspernatur, dolorem velit? Veniam velit necessitatibus dicta aliquam ut natus iste? Tenetur, laborum eveniet, quis error aliquam perspiciatis blanditiis repellendus fugit cumque voluptas alias temporibus veniam culpa natus. Cumque, fuga a exercitationem praesentium aspernatur beatae pariatur expedita odit sapiente unde laboriosam iusto dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis impedit esse eos maiores! Dicta quisquam libero, aspernatur vero placeat earum voluptatum, ab voluptate ex vitae, cum quidem perspiciatis quo praesentium! Magnam ab eaque laudantium at sit cum nihil beatae rerum earum repudiandae, minus exercitationem deserunt pariatur placeat ratione iure porro. Nam explicabo molestiae omnis quo maiores quia. Et voluptate quo totam pariatur accusantium. Quas repellendus aliquam expedita natus, omnis possimus consequuntur qui corrupti perferendis voluptatum nulla vitae at iusto ipsum veritatis, adipisci impedit delectus reprehenderit sapiente dicta excepturi. Recusandae? </div>
+                  
+               <br>
+               <br>
+               <br>
+
+         <!--  [2.] overflow: hidden ;
+
+            With the hidden value, the overflow is clipped, and the rest of the content is hidden. -->
+
+            <h2> [2.] overflow: hidden ; </h2>
+              
+            <div class="div2"> You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestias, numquam architecto dolor dicta ratione, incidunt est doloribus illum nostrum tempore reprehenderit esse! Officiis vero maxime reprehenderit ad quasi nesciunt tenetur. Accusamus ipsa inventore quas eos harum ad a quibusdam et. Asperiores, facere aliquid? Nobis eos sed numquam dolore! Excepturi blanditiis veritatis rem quae, assumenda illo exercitationem soluta magni cumque ut, in ratione sed recusandae iste officia minus tenetur commodi, nulla perspiciatis quo. Nihil, quasi possimus quidem esse modi officia maiores! Facilis alias voluptas maiores sequi commodi aliquam eaque blanditiis omnis quasi animi, ex error nemo perspiciatis, ipsam natus aut sint officia perferendis distinctio rerum ducimus. Accusantium itaque debitis sint non nemo quaerat enim ducimus, incidunt quibusdam pariatur amet dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nisi assumenda mollitia ullam quam nulla nesciunt sunt. Odio nihil enim fuga expedita, vel quidem eos autem, repellendus numquam cupiditate ducimus, ad tempore quam eius repellat amet. Modi nesciunt nam excepturi nostrum nihil corrupti, dolores aut aliquid alias. Sed exercitationem amet totam, nobis obcaecati quis vitae voluptates accusantium magni incidunt explicabo illo ! </div>
+              
+               <br>
+               <br>
+
+
+         <!-- [3.]  overflow: scroll
+
+            Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it): -->
+
+            <h2> [3.] overflow: scroll ; </h2>
+              
+            <div class="div3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem alias distinctio recusandae earum fugit, quos molestias tempore et temporibus, saepe ipsam consectetur at officiis sunt magni excepturi pariatur nisi inventore error. Dolor itaque dolores minima hic consequatur! Eum ducimus quaerat aperiam perferendis, repellendus accusamus saepe dolor officia debitis placeat modi necessitatibus ratione distinctio suscipit! Non repudiandae est mollitia id, quaerat a molestias, voluptates similique blanditiis dolor neque dicta ipsum ipsa illo eius suscipit harum iure laudantium dolorem cumque sapiente obcaecati! Placeat perspiciatis commodi, earum ipsum aliquam mollitia ab quisquam unde aliquid expedita, provident labore suscipit voluptas illo! Ratione facere, saepe ab, nobis error aspernatur blanditiis at id consectetur eveniet, quam quisquam est eligendi! Doloremque totam dicta corporis minima eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro. Sunt, accusantium expedita. Dolorum velit officiis libero, porro impedit vero aliquid itaque consequatur non, animi, at et explicabo quis nihil laboriosam dicta quisquam ex. Dolorem quo unde, iusto cumque quia ex fuga quisquam dignissimos obcaecati nihil pariatur ut deleniti illum similique perferendis! Deserunt earum, beatae eos maxime aspernatur nam sit est recusandae fuga voluptates tempore suscipit expedita cupiditate minus? Odit aperiam nemo debitis autem veritatis adipisci sunt quibusdam itaque modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa, aliquid, natus officiis ea quod iure et incidunt consequatur, quam blanditiis laboriosam rem illo quaerat impedit officia? Ullam, unde sed alias optio eveniet suscipit delectus, eum laboriosam earum repellendus facilis ratione officiis cupiditate sit odio sint excepturi velit molestiae quisquam, voluptatum architecto illum nisi. A praesentium placeat nihil vel perferendis! </div>
+
+               <br>
+               <br>
+ 
+         <!--   [4.]   overflow: auto  ;
+
+                The auto value is similar to scroll, but it adds scrollbars only when necessary.
+                   
+         -->
+
+               <h2> [4.] overflow: auto ; </h2>
+               <p> The auto value is similar to scroll, only it add scrollbars when necessary : </p>
+                   
+               <div class="div4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse delectus debitis, molestias laborum quas minima adipisci commodi animi velit itaque aspernatur facere. Iusto delectus dolore neque, temporibus laboriosam labore sit earum voluptate! Alias ea provident consequatur corrupti iusto voluptatem aliquam quam, ipsam tempore voluptatum recusandae. Error ipsa tenetur asperiores ipsam temporibus quae quis, distinctio magnam ad tempore voluptate, magni, ab veniam inventore eius non est nulla deserunt officiis. Accusamus impedit facere animi quia delectus ratione sunt quam eveniet vitae labore ea amet placeat magni alias enim sit non odio aliquid aspernatur, aperiam maxime saepe laboriosam nobis tempora! Atque voluptatem exercitationem, nesciunt blanditiis sunt possimus odio vel perferendis harum vero provident praesentium neque aperiam natus repellat distinctio aliquam explicabo, incidunt magni commodi laudantium. Ipsam hic impedit recusandae consequuntur nobis delectus earum officiis. Labore recusandae deleniti veritatis mollitia doloribus explicabo rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat numquam alias explicabo officiis suscipit a earum laboriosam, in fugit neque officia doloribus magnam mollitia velit quasi molestias perferendis dolore omnis tempora. Quis ad dolorum sint, fugit tempora nostrum, labore laudantium veniam vitae nulla soluta eaque quibusdam et modi. Tempora culpa hic ab id eius aut repudiandae deleniti cumque optio asperiores repellat provident doloremque nam dolore corrupti inventore magni quam, consequatur ullam perferendis facere veritatis. Beatae nam sequi illo nostrum consectetur totam quo in sed id, iste, ipsa repudiandae quaerat praesentium magnam, impedit maiores ea dolor provident error officia eligendi ! </div>
+                        
+               
+</body> 
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title> CSS Pseudo Classes & Pseudo Elements </title>
+ <link rel="stylesheet" href="pseudo_class.css" />
+</head>
+<body>
+
+    <!---                                    [ Pseudo Class ]  
+      
+    A pseudo-class is used to define a special state of an element.
+
+      For example, it can be used to : -----
+        -> Style an element when a user moves the mouse over it
+        -> Style 'visited' and 'unvisited' links differently
+        -> Style an element when it gets 'focus'
+        -> Style valid/invalid/required/optional form elements
+
+      The syntax of pseudo-classes : ----
+
+        selector_name : pseudo-class {
+          property: value;
+        }
+
+      [1.] Anchor Pseudo-classes : Links can be displayed in different ways 
+                    
+        /* unvisited link */
+          a:link {
+            color: red;
+          }
+
+        /* visited link */
+          a:visited {
+            olor: green;
+          }
+
+        /* mouse over link */
+          a:hover {
+            color: hotpink;
+          }
+
+        /* selected link */
+          a:active {
+            color: blue;
+          } 
+
+        [Note] : 
+         [a.] a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! 
+         [b.] a:active MUST come after a:hover in the CSS definition in order to be effective! 
+         Pseudo-class names are not case-sensitive.
+
+
+      [2.] Pseudo-classes and HTML Classes -- Pseudo-classes can be combined with HTML classes. When you hover over the link in the example, it will change color.
+
+        Example ----
+          a.highlight:hover {
+            color: red;
+          }
+
+      [3.] The :first-child Pseudo-class
+
+        The [:first-child] pseudo-class matches a specified element that is the first child of another element.
+
+        -> In the following example, the selector matches any <p> element that is the first child of any element:
+
+        p:first-child {
+          color: blue;
+        }
+
+       -> In the following example, the selector matches the first <i> element in all <p> elements:
+
+          p i:first-child {
+            color: blue;
+          } 
+
+      [4.]  The table below shows the different pseudo-classes in CSS :
+
+          [ Pseudo-class ] 	 [ Examples ]        [Example description]
+
+            -> :active 	        a:active 	          Selects the active link
+            -> :link 	          a:link 	            Selects any unvisited link
+
+            -> :hover 	        a:hover             Selects element on mouse over
+                                p:hover 	         
+                           
+            -> :visited 	      a:visited           Selects all visited links
+                                area:visited 	     
+                                              
+            -> :any-link 	      a:anylink           Selects any <a> or <area> element with an href attribute
+                                area:anylink 	     
+                                              
+            -> :first-child 	  p:first-child       Sel. ele. that is the 1st child of its parent(among a group of sibling elements)
+                                li:first-child 	
+                                              
+            -> :last-child 	    li:last-child 	    Selects any <li> element that is the last child of its parent
+
+            -> :nth-child() 	  p:nth-child(2) 	    Selects any <p> element that is the second child of its parent
+
+  -->
+
+    <main>
+      <h3> This is the main Content </h3>
+
+      <form action="">
+        <label class="required" for="name"> Name </label>
+        <input type="text" />
+      </form>
+
+      <h2>Today was a Good Day !</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        aliquid quas exercitationem, quos praesentium odit obcaecati! Incidunt
+        aliquid ad dolorem, consequatur quod inventore saepe in obcaecati
+        voluptatibus ipsa consectetur eveniet modi? Quod autem inventore
+        molestiae alias hic fuga perferendis sed. Tenetur autem odio commodi
+        itaque cupiditate libero. Accusamus dolorum pariatur quo quam beatae
+        recusandae, sequi tempore distinctio eligendi amet, est similique.
+        Pariatur tempora quisquam quis repellat aliquam praesentium excepturi
+        tenetur maiores nesciunt am.
+      </p>
+
+      <a class="primary-btn" href="#"> Learn More </a>
+
+      <ul>
+        <li>item-1</li>
+        <li class="important">item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li class="important">item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+      </ul>
+
+      <ul>
+        <li>item type 2 - 1</li>
+        <li>item type 2 - 2</li>
+        <li class="important">item type 2 - 3</li>
+        <li>item type 2 - 4</li>
+        <li>item type 2 - 5</li>
+      </ul>
+    </main>
+
+    <!--                                    [ Pseudo Elements ] 
+           
+      A CSS Pseudo-element is used to style specified parts of an element.
+
+      Examples -- 
+      
+       -> Style the first letter or line, of an element
+       -> Insert content before or after an element
+       -> Style the markers of list items
+       -> Style the viewbox behind a dialog box
+
+
+      The syntax of pseudo-elements :
+
+       selector :: pseudo-element {
+        property: value;
+       }
+
+     [1.]  The table below shows the different pseudo-elements in CSS :
+
+          [ Pseudo-elements ] 	   [ Working ]
+
+            ::first-line       used to add a special style to the first line of a text.
+            ::first-letter     used to add a special style to the first letter of a text.
+            ::before           used to insert some content before the content of an element.
+            ::after            used to insert some content after the content of an element.
+            ::marker           selects the markers of list items.
+            ::selection        matches the portion of an element that is selected by a user.
+
+  --> 
+
+</body>
+</html>

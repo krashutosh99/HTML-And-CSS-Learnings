@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Float & Clear Property </title>
+ <link rel="stylesheet" href="style.css">
+   <style>
+      
+      #heading1{
+         font-size: 45px;
+         text-align: center;
+         background-color: tan;
+      }
+      
+     .container1 { border: 2px solid black; height: 320px; }
+  
+     h2 { text-align: center; }
+    
+     #img1 { float: right;
+        height: 200px;
+        margin-right: 10px; }
+    
+     .container2 {
+        border: 2px solid black;
+        height: 320px;
+        margin-top: 20px; }
+    
+     #img2 { float: left;
+        height: 200px;
+        margin: 10px;
+        width: 300px;
+        border: 1px solid hotpink;
+     }
+
+  </style>
+</head>
+<body>
+
+    <!--                          [ The float Property ]
+
+            The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+            The float property can have one of the following values : ----
+               [a.] left - The element floats to the left of its container
+               [b.] right - The element floats to the right of its container
+               [c.] none - The element does not float (will be displayed just where it occurs in the text). This is default.
+               [d.] inherit - The element inherits the float value of its parent
+
+            **** In its simplest use, the float property is used to wrap texts around images. ****
+    
+    -->
+        <h1 id="heading1"> Float Property In CSS </h1>
+        <!-- [1.] float: right ; -->
+        <div class="container1">
+           <h2> float: right ; </h2>
+           <img id="img1" src="pineapple.jpg" alt="Pineapple" >
+           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit accusantium? Repellendus, dicta eius ipsa voluptates suscipit reiciendis voluptatibus, quas, animi perferendis sit accusamus quos placeat facere rem error eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corrupti exercitationem nam optio nihil accusamus architecto molestiae et vitae veniam doloribus ab voluptatum, voluptas, adipisci natus expedita fuga dolore amet ullam suscipit laboriosam! Officia modi distinctio, tenetur cumque reprehenderit quasi, est id dolore ! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae dignissimos veniam, optio dolores consequatur repellendus delectus autem laboriosam earum minus aspernatur fugit itaque blanditiis labore iusto suscipit iure officia pariatur eos reprehenderit et quaerat. Necessitatibus, quia! Assumenda autem impedit porro et dolor, dicta corporis quod architecto dignissimos nam molestiae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, deserunt dicta accusamus voluptates alias sequi eligendi aspernatur unde facilis cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero cupiditate repellendus obcaecati laborum unde neque. Aliquam nam nemo nisi dolores sapiente et aut laboriosam, impedit dolor. Cupiditate, voluptates perspiciatis ! </p>
+
+        </div>
+
+        <!-- [2.] float: left ; -->
+        <div class="container2">
+            <h2> float: left ; </h2>
+            <img id="img2" src="w3schools.png" alt="w3schools" >
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit accusantium? Repellendus, dicta eius ipsa voluptates suscipit reiciendis voluptatibus, quas, animi perferendis sit accusamus quos placeat facere rem error eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corrupti exercitationem nam optio nihil accusamus architecto molestiae et vitae veniam doloribus ab voluptatum, voluptas, adipisci natus expedita fuga dolore amet ullam suscipit laboriosam! Officia modi distinctio, tenetur cumque reprehenderit quasi, est id dolore ! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae dignissimos veniam, optio dolores consequatur repellendus delectus autem laboriosam earum minus aspernatur fugit itaque blanditiis labore iusto suscipit iure officia pariatur eos reprehenderit et quaerat. Necessitatibus, quia! Assumenda autem impedit porro et dolor, dicta corporis quod architecto dignissimos nam molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore laborum illum! Totam mollitia dolorem quas rem necessitatibus, praesentium dignissimos ratione cum dolor asperiores ! </p>
+ 
+         </div>
+
+         <!-- [3.] Float Next To Each Other [inherit] ----
+          Normally div elements will be displayed on top of each other. However, if we use float: left we can let elements float next to each other -->
+
+          <style>
+              div {
+               float: left;
+               padding: 15px; }
+            
+             .div1 { background: red; }
+            
+             .div2 { background: yellow; }
+            
+             .div3 { background: green; }
+
+              .container3 { border: 3px solid red; }
+
+          </style>
+            
+            <h2> Float Next To Each Other [ Inherit ] </h2>
+            
+            <p> Here, three divs will float next to each other [ Since, all inside Divs are following float : left ; of parent Div Container.] .</p>
+
+            <div class="container3">
+                <div class="div1"> Div 1 </div>
+                <div class="div2"> Div 2 </div>
+               <div class="div3">  Div 3 </div>
+            </div>
+    
+
+     <!-- Note : The clearfix Hack
+
+         If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem.  -->
+
+         
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Colors In CSS </title>
+ <style> 
+   #main-heading {
+     font-size: 50px;
+     text-align: center;
+     background-color: #f0f;
+  } 
+ </style>
+</head>
+<body>
+     
+  
+     <!--                                   Colors In CSS
+
+          Colors are specified using predefined color names, or using following color models ----
+           
+              [1.] Color names
+              [2.] RGB [ + RGBA ], 
+              [3.] HEX and 
+              [4.] HSL [ HSLA ] color model values.
+
+          [1.]  CSS Color Names [Pre-defined Color Names] ------
+           
+               In CSS, a color can be specified by using a predefined color name:
+               Example : Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet, LightGray & many more.
+
+     -->   
+                <h1 id="main-heading"> [ 3 ] - COLORS IN CSS </h1>
+
+                <h1 style="background-color:#6a5acd; font-size: 45px;"> 1 - COLOR USING NAMES </h1>
+                <h1 style="color:Tomato;"> Hello World, I'm Ashutosh Here ! </h1>
+                <p style="color:DodgerBlue;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magni blanditiis unde aut atque deserunt, eligendi quo, ipsam, officiis neque hic. Distinctio, consectetur ad nihil aperiam suscipit nam vitae repellat! </p>
+                <p style="color:MediumSeaGreen;"> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p> 
+
+                <h1 style="background-color:DodgerBlue;"> Hello World I'm Learning CSS ! </h1>
+                <p style="background-color:Tomato;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat, sapiente sunt tempora ullam totam ad voluptatem. Dolorum explicabo quas fugiat, officiis aut asperiores. Repudiandae laboriosam sit nisi aperiam tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum porro aut sint error necessitatibus unde repellendus tempore quod harum?</p>
+
+     <!--
+
+          [2.]  RGB Color Model ------
+           
+                An RGB color value is specified with: rgb(red, green, blue).
+                Each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255.
+
+                For example --
+                 [a.] rgb(255, 0, 0) is rendered red, because red is set to its highest value (255) and the others are set to 0.
+                 [b.] To display black, set all color parameters to 0, : rgb(0, 0, 0).
+                 [c.] To display white, set all color parameters to 255, : rgb(255, 255, 255). 
+
+     -->
+                 <h1 style="background-color:rgb(60, 179, 113); font-size: 45px;"> 2 - RGB COLOR MODEL </h1>
+                 <p style="background-color:rgb(255, 99, 71);"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat, sapiente sunt tempora ullam totam ad voluptatem. Dolorum explicabo quas fugiat, officiis aut asperiores. Repudiandae laboriosam sit nisi aperiam tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum porro aut sint error necessitatibus unde repellendus tempore quod harum? </p>
+
+                 <p style="background-color:rgb(255, 0, 0);"> This is red color's RGB declaration.</p>
+                 <p style="background-color:rgb(60, 179, 113);">This is lightGreen color's RGB declaration.</p>
+                 <p style="background-color:rgb(238, 130, 238);">This is pink color's RGB declaration.</p>
+                 <p style="background-color:rgb(255, 165, 0);">This is dark yelow color's RGB declaration.</p>
+                 <p style="background-color:rgb(106, 90, 205);">This is purple color's RGB declaration.</p>
+
+                <h3 style="font-size: 25px;"> Shades of gray are often defined using equal values for all the 3 light sources.</h3>
+                 <p style="background-color:rgb(90, 90, 90);">This is one of grey color's RGB declaration.</p>
+                 <p style="background-color:rgb(160, 160, 160);">This is one of grey color's RGB declaration.</p>
+                 <p style="background-color:rgb(180, 180, 180);">This is one of grey color's RGB declaration.</p>
+                 <p style="background-color:rgb(220, 220, 220);">This is one of grey color's RGB declaration.</p>
+     
+     <!--      RGBA Value of RGB Color Model -----
+
+               RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+               An RGBA color value is specified with: rgba(red, green, blue, alpha)
+               The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+     -->                 
+              <h2 style="background-color: rgba(255, 99, 71, 0);"> 
+                This is Alpha RGB Color Declaration's Example. 
+              </h2>
+
+              <h2 style="background-color: rgba(255, 99, 71, 0.2);"> 
+                This is Alpha RGB Color Declaration's Example. 
+              </h2>
+               
+               <h2 style="background-color: rgba(255, 99, 71, 0.4);"> 
+                This is Alpha RGB Color Declaration's Example. 
+               </h2>
+
+               <h2 style="background-color: rgba(255, 99, 71, 0.8);">
+                This is Alpha RGB Color Declaration's Example. 
+               </h2>
+
+               <h2 style="background-color: rgba(255, 99, 71, 1);"> 
+                This is Alpha RGB Color Declaration's Example. 
+               </h2>
+     
+     <!--
+          [3.] HEX Color Model ------
+           
+               A HEX color value is specified with: #RRGGBB, where RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color
+               (same as decimal 0-255).
+
+               For example ----
+                [a.] #0000FF is rendered as blue, because the blue parameter is set to its highest value (FF) and the others are set to 00.
+
+                [b.] To display black, set all values to 00, like this: #000000.
+
+                [c.] To display white, set all values to ff, like this: #ffffff.  
+                    
+     -->
+                <h1 style="background-color:Yellow; font-size: 45px;"> 3 - HEX COLOR MODEL </h1>
+                <p style="background-color:#ff0000;"> This is HEX's Red Color declaration.</p>
+                <p style="background-color:#0000ff;"> This is HEX's Blue Color declaration.</p>
+                <p style="background-color:#3cb371;">This is HEX's Light Green Color declaration.</p>
+                <p style="background-color:#ee82ee;">This is HEX's Pink Color declaration</p>
+                <p style="background-color:#ffa500;">This is HEX's Dark Yellow Color declaration</p>
+                <p style="background-color:#6a5acd;">This is HEX's Purole Color declaration</p>
+
+          <!--  3 Digit HEX Value
+                     The 3-digit hex code is a shorthand for some 6-digit hex codes.The 3-digit hex code has the following form: #rgb, where r, g, and b represent the red, green, and blue components with values between 0 and f.
+
+                    The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component. So, if we have #ff00cc, it can be written like this: #f0c.
+                
+          -->
+                    <style>
+                         .heading {
+                            color: #f0f; /* same as #ff00ff */
+                         }
+
+                         .para {
+                           color: #b58; /* same as #bb5588 */
+                         }
+                    </style>
+                    <h1 class="heading"> CSS 3-digit Hex Code </h1>
+                    <p class="para" style="font-size: 30px;"> This is a paragraph. </p>
+
+
+     <!--   [4.] HSL Color Model 
+
+               In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+                    hsl(hue, saturation, lightness);
+
+               Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+               Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+               Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+
+     -->
+               <h1 style="background-color:lightskyblue; font-size: 45px;"> 4 - HSL COLOR MODEL </h1>
+               <p style="background-color:hsl(0, 100%, 50%);"> This is HSL's Red Color declaration. </p>
+               <p style="background-color:hsl(240, 100%, 50%);"> This is HSL's Blue Color declaration. </p>
+               <p style="background-color:hsl(147, 50%, 47%);"> This is HSL's Light Green Color declaration. </p>
+               <p style="background-color:hsl(300, 76%, 72%);"> This is HSL's Pink Color declaration. </p>
+               <p style="background-color:hsl(39, 100%, 50%);"> This is HSL's Dark Yellow Color declaration. </p>
+               <p style="background-color:hsl(248, 53%, 58%);"> This is HSL's Purole Color declaration. </p>
+   
+</body>
+</html>

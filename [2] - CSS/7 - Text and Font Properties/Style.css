@@ -1,0 +1,82 @@
+/* Importing "IBM Plex Mono" Font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "sofia", sans-serif;
+}
+
+.div {
+  border: 2px solid black;
+  margin-bottom: 30px;
+}
+
+#head1 {
+  color: brown;
+  font-size: 40px;
+  font-family: "Sofia", sans-serif;
+}
+
+#para,
+#para1 {
+  color: yellowgreen;
+  font-size: 40px;
+  font-family: "Sofia", sans-serif;
+}
+
+#head2 {
+  color: tomato;
+  font-size: 40px;
+  font-family: "Trirong", sans-serif;
+}
+
+#para2,
+#para3 {
+  color: slateblue;
+  font-size: 40px;
+  font-family: "Trirong", sans-serif;
+}
+
+#head3 {
+  color: rgb(26, 137, 181);
+  font-size: 40px;
+  font-family: "Audiowide", sans-serif;
+}
+
+#para4,
+#para5 {
+  color: red;
+  font-size: 40px;
+  font-family: "Audiowide", sans-serif;
+}
+
+#head4 {
+  color: coral;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", sans-serif;
+}
+
+#para6,
+#para7 {
+  color: teal;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", sans-serif;
+}
+
+h1.a {
+  font-family: "Audiowide", sans-serif;
+}
+
+h1.b {
+  font-family: "Sofia", sans-serif;
+}
+
+h1.c {
+  font-family: "Trirong", serif;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}

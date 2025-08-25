@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title> HTML - Anchor Tag </title>
+</head>
+<body>
+
+  <!--                                          HTML Hyperlinks
+
+      HTML links are hyperlinks. The HTML <a> tag defines a hyperlink. It has the following syntax :
+
+       <a href="url"> link-text </a> where; [href = Hypertext Reference]
+
+      The most important attribute of the <a> element is the "href" attribute, which indicates the link's destination.The link text is the part that will be visible to the reader.
+
+       [Note]: A link does not have to be necessarily a "text". A link can be an "image" or any other HTML element too !
+
+      By default, links will appear as follows in all browsers:
+       [a.] An "unvisited" link is underlined and blue.
+       [b.] A "visited" link is underlined and purple.
+       [c.] A "active" link is underlined and red.
+
+  -->
+         <h1> HTML - Anchor Tags </h1>
+         <a href="https://www.w3schools.com/"> Visit W3Schools.com ! </a> 
+
+         <h2> External Link </h2>
+         <a href="https://www.google.com"> Visit Google Search !</a> <br>
+
+  <!--  HTML Links - The target Attribute
+
+        By default, the linked page will be displayed in the current browser window. To change this, we can specify another target for the link/url. The "target" attribute specifies where to open the linked document.
+
+        The target attribute can have one of the following values:
+        [a.] _self - Default. Opens the document in the same window/tab as it was clicked.
+        [b.] _blank - Opens the document in a new window or tab
+        [c.] _parent - Opens the document in the parent frame
+        [d.] _top - Opens the document in the full body of the window
+  
+  -->
+         <a href="https://www.w3schools.com/" target="_blank"> Visit W3Schools Website </a> 
+
+         <h2> Link With Target </h2>
+         <a href="https://www.google.com" target="_parent"> Visit Google </a>
+
+  <!--  Absolute URLs vs. Relative URLs
+
+        Both examples above are using an absolute URL (a full web address) in the href attribute.
+        A local link (a link/document to a page within the same website/doc-page) can be specified with a relative URL (without the "https://www" part):
+         
+  -->
+
+         <h2> Relative Link </h2>
+         <a href="about.html"> About Page </a>
+
+         <h2> Internal Link </h2>
+         <a href="#services"> Go to services </a>  <!-- "services" as a ID is defined below -->
+
+         <h2> Email Links </h2>
+         <a href="mailto:example@example.com"> Send an email </a>
+
+         <h2> File Links </h2>
+         <a href="invoice.pdf"> Download Document </a>
+
+         <h2> Title Attribute </h2>
+         <a href="about.html" title="About Traversy Media"> About Page </a>
+
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quo incidunt veniam totam tempora magni ipsum facilis harum obcaecati corrupti! Consequatur, dicta sit laborum veritatis minus nesciunt praesentium nisi nobis hic, aspernatur accusantium aut magni fugiat non, dolorem aliquid eius ut! Sit ea omnis nobis suscipit dolore laudantium quaerat iusto fugit? Libero porro aut accusamus. Sunt numqua deleniti fuga eligendi excepturi voluptates totam autem, iste natus veniam alias? Magnam, voluptas temporibus ducimus necessitatibus omnis non distinctio porro rerum accusa !!  </p>
+     
+         <h2> Services </h2>
+         <p id="services">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo assumenda veniam placeat id delectus suscipit labore maxime. Nisi consequuntur placeat repellat nesciunt tempora repudiandae facere cumque nam minus nemo? </p>
+
+  <!-- Using an Image as a Link -- To use an image as a link, just put the <img> tag inside the <a> tag. -->
+
+       <a href="https://pixabay.com/" target="_blank">
+          <img src="pixabay.svg" alt="Pixabay-Logo" style="width:100pxpx; height:100px;">
+       </a> 
+
+  <!-- Link Titles -- The "title" attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+
+      <br><br><br>
+      <a href="https://www.w3schools.com/html/" style="font-size: 40px;" title="W3Schools HTML Section">Visit our HTML Tutorial</a> 
+         
+</body>
+</html>

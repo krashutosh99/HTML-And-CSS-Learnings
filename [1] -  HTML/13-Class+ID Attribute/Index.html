@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=\, initial-scale=1.0"/>
+ <title> HTML - Class & ID Attributes </title>
+</head>
+<body>
+
+  <!--                                       class Attribute
+
+        The HTML class attribute is used to specify a class for an HTML element.Multiple HTML elements can share the same class.
+        It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+        The class attribute can be used on any HTML element.
+
+        The Syntax For Class ---- Use "class" attribute to declare a class inside any element and while using place a a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}:
+
+        [Note]: The class name is case sensitive!
+  
+  -->
+       <h1 style="text-align: center;"> Class Attribute </h1>
+
+       <!--Example 1-->
+       <style>
+        .city1 {
+          background-color: tomato;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        .city2 {
+          background-color: goldenrod;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        .city3 {
+          background-color: purple;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+      </style>
+  
+      <div class="city1">
+         <h2>London</h2>
+         <p>London is the capital of England.</p>
+      </div> 
+  
+      <div class="city2">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+      </div>
+  
+      <div class="city3">
+         <h2>Tokyo</h2>
+         <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <!--Example 2-->
+      <style>
+        .note {
+          font-size: 120%;
+          color: red;
+        }
+        </style>
+        <h2>My <span class="note">Important</span> Heading </h2>
+        <p>This is some <span class="note">important</span> text.</p>
+
+   <!--                                          id Attribute
+
+         The HTML id attribute is used to specify a unique id for an HTML element.The value of the id attribute must be unique within the HTML document ie; we cannot have more than one element with the same id in an HTML document.
+
+         The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+         The syntax for id is: Use id attribute inside any element to declare id then while using write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+        
+   -->
+
+       <style>
+         #myHeader {
+           background-color: lightblue;
+           color: black;
+           padding: 40px;
+           text-align: center;
+         } 
+       </style>
+  
+       <h1 style="text-align: center;">The id Attribute</h1>
+       <p>Use CSS to style an element with the id "myHeader":</p>
+    
+       <h1 id="myHeader">My Header</h1>
+
+       <!-- Header -->
+       <div class="header" id="header">
+         <h1> My Website </h1>
+         <ul class="nav">
+           <li><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </div>
+
+       <!-- Sections -->
+       <div id="about" class="card text-center">
+         <h2 class="text-lg"> Section One </h2>
+         <p>This is the first paragraph in<span class="primary-text">section one</span></p>
+         <p>This is the second paragraph in<span class="secondary-text">section one</span></p>
+       </div>
+
+       <div id="contact" class="card text-center">
+        <h2 class="text-xl">Section Two</h2>
+        <p class="lead">This is the first paragraph in<span class="primary-text">section two</span></p>
+        <p>This is the second paragraph in<span class="secondary-text">section two</span></p>
+       </div>
+
+       <!-- Footer -->
+       <div class="footer">&copy; 2024 My Website</div>
+
+</body>
+</html>

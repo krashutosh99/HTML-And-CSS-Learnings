@@ -1,0 +1,41 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container {
+ height: 500px;
+ margin: 10px;
+ border: 2px solid red;
+ display: grid;
+
+ row-gap: 20px; 
+ column-gap: 5px;
+
+ grid-template-columns:  100px 200px 300px; /* Creates 3 columns in grid with width mentioned 
+ ex - 
+  grid-template-columns : 1fr 1fr 1fr 1fr; or repeat(4, 1fr);
+  grid-template-columns : repeat(auto-fill, 100px);
+  grid-template-columns : auto auto; or 200px auto; or 200px auto auto; // auto fills remaining spaces
+ */
+
+ /* grid-template-rows: 100px 140px 180px;  Gives specified height to 3 rows in Grid. 
+ grid-auto-rows : Gives height to all left-over rows. 
+ justify-content: center; 
+ align-content: center; 
+ align-items: center; */
+
+}
+
+.box {
+ border: 2px solid green;
+ padding: 12px;
+}
+
+#box-1 {
+  background-color: violet;
+  justify-self: end;
+  align-self: end;
+
+}

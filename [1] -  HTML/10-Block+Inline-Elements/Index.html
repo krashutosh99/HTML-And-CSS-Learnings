@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title> HTML - Block vs Inline Elements </title>
+  <style>
+    p {
+      background-color: #aaa;
+      padding: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    a {
+      background-color: #eee;
+      padding: 0.5rem;
+      margin-right: 5rem;
+      margin-bottom: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+    <h1> HTML - Block vs Inline Elements </h1>
+
+    <!--                                       [Block-level elements] ---- 
+     
+         Block-level elements typically start on a new line and take up the full width available to them, regardless of their actual content width. 
+         This means they stack vertically and can contain other block-level elements as well as inline elements.
+
+         Examples ----
+          <div>: A general-purpose container for other elements.
+          <p>: Defines a paragraph.
+          <h1>, <h2>, …, <h6>: Heading elements of different levels.
+          <ol>, <ul>: Ordered and unordered lists.
+          <table>: Defines a table.
+          <form>: Used for HTML forms to collect user inputs.
+          <section>, <article>, <nav>, <aside>, <header>, <footer>: Semantic elements that define areas of a webpage.
+     
+    -->
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti sequi aperiam officia ab, voluptatem cum nisi excepturi necessitatibus doloremque iusto nihil quam a eum. Error, perspiciatis ducimus! Quaerat laborum minus dicta veritatis dignissimos exercitationem blanditiis quia, odio eius ut cumque et aperiam odit quidem incidunt? Pariatur minima nihil optio eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam cumque Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi suscipit illo ab ut aut in molestias, aliquid ducimus velit non fugiat eveniet quos dolores, dolorum architecto perferendis ratione. Quas neque adipisci ducimus, quos modi ut debitis, quisquam, nemo numquam commodi alias sequi similique. Aperiam quisquam saepe deserunt earum pariatur optio eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam cumque Lorem ipsum dolor sit, amet adipisicing !</p>
+
+    <!--                                        [Inline elements] ----
+
+         Inline elements do not start on a new line; they appear on the same line as adjacent content, as long as there is space. They only take up as much width as their content requires. 
+         Inline elements are typically used within block-level elements to add content or style. 
+
+         Examples ----     
+          <span>: A general-purpose inline container for phrasing content.
+          <a>: Creates hyperlinks.
+          <img>: Embeds an image.
+          <strong>, <b>: Used for strong emphasis and bold text, respectively.
+          <em>, <i>: Used for emphasis and italic text, respectively.
+          <br>: Inserts a line break within text.
+          <input>: Creates interactive controls for forms.
+     
+    -->
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+
+    <p> Above two lorem paragraphs defined through paragraph tag are on new line or one after another because "paragraph" is a block element and two links defined through anchor tag are in same line because "anchor" tag is a inline element. </p>
+
+    
+</body>
+</html>
